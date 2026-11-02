@@ -108,7 +108,6 @@ input::placeholder { color: var(--muted); }
 .step-body { padding-bottom: 16px; flex: 1; }
 .step-title { font-size: 15px; font-weight: 500; }
 .step-sub { font-size: 13px; color: var(--muted); margin-top: 2px; }
-.alt { display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 14px; background: var(--ground); font-size: 14px; }
 .tag { position: absolute; top: -12px; white-space: nowrap; font-size: 12px; font-weight: 600; padding: 4px 8px; border-radius: 8px; background: var(--card); box-shadow: 0 1px 6px rgba(40, 30, 20, 0.14); }
 
 /* Reach */
@@ -149,3 +148,5 @@ input::placeholder { color: var(--muted); }
 .about .byline { margin-top: 24px; color: var(--muted); font-size: 14px; }
 .about a { color: var(--accent); }
 .mark svg { width: 15px; height: 15px; }
+.or { margin-top: 18px; padding-top: 4px; border-top: 1px solid var(--rule); }
+.or-title { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }

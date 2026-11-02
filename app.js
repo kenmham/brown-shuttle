@@ -545,20 +545,14 @@ function tripView(from, dest, p) {
     </div>`;
   }
 
-  if (useShuttle) {
+  // leave-by row, live arrival and the step list for a shuttle trip
+  const shuttleDetails = () => {
     const c = b.r.color;
     const then = b.following ? `, then ${etaText(b.following.min)}` : '';
     const slack = b.bus.min - b.w1;
     const leave = slack >= 1 ? `Leave in ${mins(slack)} min` : slack > -CATCH_SLACK_MIN ? 'Leave now' : 'Leave now, briskly';
     const by = slack >= 1 ? `by ${clock(new Date(Date.now() + slack * 60000))}` : `${mins(b.w1)} min walk to the stop`;
-    return head + `<div class="sheet" style="height:min(400px, 50%)">
-      <div class="handle-zone"><div class="handle"></div></div>
-      <div class="total">
-        <div><div style="display:flex;align-items:baseline;gap:6px"><div class="num n">${mins(b.total)}</div><div style="font-size:17px;font-weight:500">min</div></div>
-        <div class="sub">Arrive around ${arrive(b.total)}</div></div>
-        <div class="pill"><span class="dot" style="background:${c}"></span>${esc(b.r.short)}</div>
-      </div>
-      <div class="leave">
+    return `<div class="leave">
         <div><div class="leave-head">${leave}</div><div class="sub">${by}</div></div>
         <button class="go-btn" data-start>Go</button>
       </div>
@@ -572,22 +566,38 @@ function tripView(from, dest, p) {
           <div class="step-body"><div class="step-title">Get off at ${esc(b.b.name)}</div><div class="step-sub num">then walk ${mins(b.w2)} min</div></div></div>
         <div class="step"><div class="rail"><div style="width:12px;height:12px;border-radius:4px;background:var(--accent);margin-top:3px"></div></div>
           <div class="step-title">${esc(dest.name)}</div></div>
+      </div>`;
+  };
+
+  if (useShuttle) {
+    return head + `<div class="sheet" style="height:min(400px, 50%)">
+      <div class="handle-zone"><div class="handle"></div></div>
+      <div class="total">
+        <div><div style="display:flex;align-items:baseline;gap:6px"><div class="num n">${mins(b.total)}</div><div style="font-size:17px;font-weight:500">min</div></div>
+        <div class="sub">Arrive around ${arrive(b.total)}</div></div>
+        <div class="pill"><span class="dot" style="background:${b.r.color}"></span>${esc(b.r.short)}</div>
       </div>
+      ${shuttleDetails()}
     </div>`;
   }
 
+  // walking wins (or no bus): walking first, the best shuttle option still listed below it
   const reason = b ? 'Walking gets you there sooner than the next shuttle would.'
     : !state.live ? (state.liveError ? "Couldn't reach the tracker, so this is the walk." : 'Checking the shuttles…')
     : liveRoutes().length ? 'No bus on the road right now gets you closer than walking.'
     : 'No shuttles are on the road right now. OnCall picks up from 5 PM.';
-  return head + `<div class="sheet" style="height:min(300px, 40%)">
+  return head + `<div class="sheet" style="height:min(${b ? '400px, 50%' : '300px, 40%'})">
     <div class="handle-zone"><div class="handle"></div></div>
     <div class="total"><div><div style="display:flex;align-items:baseline;gap:6px"><div class="num n">${mins(p.walk)}</div><div style="font-size:17px;font-weight:500">min</div></div>
       <div class="sub">On foot · arrive around ${arrive(p.walk)}</div></div></div>
-    <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px">
-      <div style="font-size:15px;line-height:1.5">${reason}</div>
-      ${b ? `<div class="alt"><span class="dot" style="background:${b.r.color}"></span><div style="flex:1">${esc(b.r.short)} from ${esc(b.a.name)}</div><div class="num muted">${mins(b.total)} min</div></div>` : ''}
-    </div>
+    <div style="font-size:15px;line-height:1.5;margin-top:14px">${reason}</div>
+    ${b ? `<div class="or">
+      <div class="total">
+        <div><div class="or-title">Or by shuttle</div><div class="sub">${mins(b.total)} min · arrive around ${arrive(b.total)}</div></div>
+        <div class="pill"><span class="dot" style="background:${b.r.color}"></span>${esc(b.r.short)}</div>
+      </div>
+      ${shuttleDetails()}
+    </div>` : ''}
   </div>`;
 }
 
