@@ -18,6 +18,8 @@ const MAX_ETA_MIN = 90;                             // Passio ETAs past this are
 const LNG_PX = 17003.9, LAT_PX = 22782.1;          // same projection as the network builder
 const RIDE_M_PER_MIN = 300, DWELL_MIN = 0.35;       // fallback ride model when Passio has no ETA pair
 const WALK_M_PER_MIN = 80, WALK_DETOUR = 1.25, MAX_WALK_MIN = 15;
+const ZOOM_MIN = 0.6, ZOOM_MAX = 8;                 // map zoom, relative to the fitted view
+const SHEET_PEEK_PX = 96, SHEET_TOP_GAP_PX = 56;    // sheet snap points: collapsed height, gap left above it when open
 const CATCH_SLACK_MIN = 0.5;                        // a bus this close to your arrival is still catchable
 const BASEMAP = { src: 'basemap.svg', frame: [-160, -40, 720, 800] };  // map px covered by basemap.svg
 // Brown dining locations, placed on their OpenStreetMap buildings.
@@ -35,7 +37,8 @@ const DEMO = { id: 'demo', name: 'Main Green', lat: 41.8265, lng: -71.403, ids: 
 let NET, PLACES, PLACE_BY_ID, STOP_PLACE, ALL_STOP_IDS;
 const HERE = { id: 'here', name: 'Your location', ids: [], lines: '', lat: 0, lng: 0, x: 0, y: 0 };
 const state = { screen: 'home', fromId: 'demo', destId: null, query: '', fromQuery: '', live: null, liveError: false,
-  geo: 'off', geoAcc: null, wantHere: false, reach: false, go: null };
+  geo: 'off', geoAcc: null, wantHere: false, reach: false, go: null,
+  cam: { z: 1, tx: 0, ty: 0 }, camKey: '', sheetH: {} };
 
 // ---------- geometry ----------
 function proj(lat, lng) { return { x: 205 + (lng + 71.403) * LNG_PX, y: 300 - (lat - 41.8245) * LAT_PX }; }
@@ -248,6 +251,7 @@ function goStatus(from) {
 function fit(pts, R) {
   const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
   const x1 = Math.min(...xs), x2 = Math.max(...xs), y1 = Math.min(...ys), y2 = Math.max(...ys);
+  if (R[3] - R[1] < 120) R = [R[0], R[1], R[2], R[1] + 120];  // sheet pulled up over the map: frame behind it
   const bw = Math.max(x2 - x1, 70), bh = Math.max(y2 - y1, 70);
   const s = Math.min((R[2] - R[0]) / bw, (R[3] - R[1]) / bh, 2.6);
   const vbx = (x1 + x2) / 2 - (R[0] + R[2]) / 2 / s;
@@ -259,7 +263,11 @@ function scr(p, f) { return { x: (p.x - f.vbx) * f.s, y: (p.y - f.vby) * f.s }; 
 function renderMap(view) {
   const el = document.getElementById('map');
   const W = el.clientWidth, H = el.clientHeight;
-  const f = view.fit(W, H);
+  const key = [view.trip ? 'trip' : 'home', view.from.id, view.dest ? view.dest.id : '', view.leg || ''].join('|');
+  if (key !== state.camKey) { state.camKey = key; state.cam = { z: 1, tx: 0, ty: 0 }; }
+  lastView = view;
+  const f0 = view.fit(W, H), c = state.cam, fs = f0.s * c.z;
+  const f = { s: fs, vbx: f0.vbx - c.tx / fs, vby: f0.vby - c.ty / fs };
   const k = 1 / f.s;
   const liveIds = new Set(liveRoutes().map((r) => r.id));
   const op = (r) => view.trip ? (view.trip.r === r ? 1 : 0.14) : (liveIds.has(r.id) || !state.live ? 1 : 0.2);
@@ -387,10 +395,9 @@ function homeView(from) {
     </div>` : ''}
   </div>
   <div class="sheet" id="sheet" style="max-height:44%">
-    <div class="handle"></div>
+    <div class="handle-zone"><div class="handle"></div></div>
     <div class="sheet-head"><div class="sheet-title">Running now</div><div class="sub">${live.length ? 'Nearest stop to you' : ''}</div></div>
     ${rows}${empty}${offline}
-    <div class="credit">Brown Shuttle redesign prototype. Map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors</a>.</div>
   </div>`;
 }
 
@@ -499,7 +506,7 @@ function tripView(from, dest, p) {
     const st = goStatus(from);
     const c = st.r.color;
     return head + `<div class="sheet" style="height:min(330px, 44%)">
-      <div class="handle"></div>
+      <div class="handle-zone"><div class="handle"></div></div>
       <div class="status ${st.mode}">
         <div class="status-head">${esc(st.head)}</div>
         <div class="status-detail">${esc(st.detail)}</div>
@@ -520,7 +527,7 @@ function tripView(from, dest, p) {
     const leave = slack >= 1 ? `Leave in ${mins(slack)} min` : slack > -CATCH_SLACK_MIN ? 'Leave now' : 'Leave now, briskly';
     const by = slack >= 1 ? `by ${clock(new Date(Date.now() + slack * 60000))}` : `${mins(b.w1)} min walk to the stop`;
     return head + `<div class="sheet" style="height:min(400px, 50%)">
-      <div class="handle"></div>
+      <div class="handle-zone"><div class="handle"></div></div>
       <div class="total">
         <div><div style="display:flex;align-items:baseline;gap:6px"><div class="num n">${mins(b.total)}</div><div style="font-size:17px;font-weight:500">min</div></div>
         <div class="sub">Arrive around ${arrive(b.total)}</div></div>
@@ -549,7 +556,7 @@ function tripView(from, dest, p) {
     : liveRoutes().length ? 'No bus on the road right now gets you closer than walking.'
     : 'No shuttles are on the road right now. OnCall picks up from 5 PM.';
   return head + `<div class="sheet" style="height:min(300px, 40%)">
-    <div class="handle"></div>
+    <div class="handle-zone"><div class="handle"></div></div>
     <div class="total"><div><div style="display:flex;align-items:baseline;gap:6px"><div class="num n">${mins(p.walk)}</div><div style="font-size:17px;font-weight:500">min</div></div>
       <div class="sub">On foot · arrive around ${arrive(p.walk)}</div></div></div>
     <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px">
@@ -561,7 +568,7 @@ function tripView(from, dest, p) {
 
 // ---------- render ----------
 function render() {
-  if (!NET) return;
+  if (!NET || sheetDrag) return;
   const from = PLACE_BY_ID[state.fromId] || DEMO;
   const dest = state.destId ? PLACE_BY_ID[state.destId] : null;
   if (state.screen === 'trip' && !dest) state.screen = 'home';
@@ -582,16 +589,20 @@ function render() {
     }
     const prevScroll = panel.querySelector('.sheet') ? panel.querySelector('.sheet').scrollTop : 0;
     panel.innerHTML = tripView(from, dest, p);
+    applySheet();
     panel.querySelector('.sheet').scrollTop = prevScroll;
     const sheetH = panel.querySelector('.sheet').offsetHeight;
+    // in GO mode, frame only the leg you are on: walk to the stop, the ride, or the walk after
+    const leg = state.go && b ? { ride: [b.a, b.b], done: [b.b, dest] }[goStatus(from).mode] || [from, b.a] : null;
     renderMap({
-      from, dest, trip: b,
+      from, dest, trip: b, leg: leg && leg.map((p) => p.id).join('>'),
       walks: b ? [[from, b.a], [b.b, dest]] : [[from, dest]],
       tags: b ? [[b.a, 'Board', b.r.color], [b.b, 'Get off', b.r.color]] : [],
-      fit: (W, H) => fit(b ? [from, dest, b.a, b.b] : [from, dest], [28, 110, W - 28, H - sheetH - 24]),
+      fit: (W, H) => fit(leg || (b ? [from, dest, b.a, b.b] : [from, dest]), [28, 110, W - 28, H - sheetH - 24]),
     });
   } else {
     panel.innerHTML = state.screen === 'search' ? searchView(from) : state.screen === 'from' ? fromView(from) : homeView(from);
+    applySheet();
     renderMap(homeMapView(from));
     if (state.screen === 'search') document.getElementById('dest').focus();
   }
@@ -605,6 +616,108 @@ function homeMapView(from) {
   return { from, reach: state.reach && state.screen === 'home',
     fit: (W, H) => fit([{ x: 36, y: 153 }, { x: 308, y: 597 }, from], [20, topH, W - 20, H - sheetH - 10]) };
 }
+
+// ---------- map zoom and pan ----------
+let lastView = null, mapFrame = 0;
+function redrawMap() {
+  if (!mapFrame) mapFrame = requestAnimationFrame(() => { mapFrame = 0; if (lastView) renderMap(lastView); });
+}
+// zoom by `by` around screen point (x, y), then pan by (dx, dy)
+function moveCam(by, x, y, dx = 0, dy = 0) {
+  const c = state.cam, z = Math.min(ZOOM_MAX, Math.max(ZOOM_MIN, c.z * by)), r = z / c.z;
+  state.cam = { z, tx: x - (x - c.tx) * r + dx, ty: y - (y - c.ty) * r + dy };
+  redrawMap();
+}
+const mapEl = document.getElementById('map');
+const touches = new Map();
+function local(e) { const b = mapEl.getBoundingClientRect(); return { x: e.clientX - b.left, y: e.clientY - b.top }; }
+function pinch() {
+  const [a, b] = [...touches.values()];
+  return b ? { x: (a.x + b.x) / 2, y: (a.y + b.y) / 2, d: Math.hypot(a.x - b.x, a.y - b.y) } : { x: a.x, y: a.y, d: 0 };
+}
+mapEl.addEventListener('pointerdown', (e) => {
+  mapEl.setPointerCapture(e.pointerId);
+  touches.set(e.pointerId, local(e));
+  mapEl.classList.add('moving');
+});
+mapEl.addEventListener('pointermove', (e) => {
+  if (!touches.has(e.pointerId)) return;
+  const before = pinch();
+  touches.set(e.pointerId, local(e));
+  const after = pinch();
+  const by = before.d && after.d ? after.d / before.d : 1;
+  moveCam(by, before.x, before.y, after.x - before.x, after.y - before.y);
+});
+function liftPointer(e) {
+  touches.delete(e.pointerId);
+  if (!touches.size) mapEl.classList.remove('moving');
+}
+mapEl.addEventListener('pointerup', liftPointer);
+mapEl.addEventListener('pointercancel', liftPointer);
+mapEl.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const p = local(e);
+  moveCam(Math.exp(-e.deltaY * (e.ctrlKey ? 0.01 : 0.002)), p.x, p.y);  // ctrlKey: trackpad pinch
+}, { passive: false });
+mapEl.addEventListener('dblclick', (e) => { const p = local(e); moveCam(2, p.x, p.y); });
+
+// ---------- sheet drag ----------
+let sheetDrag = null;
+function sheetKey() { return state.screen === 'trip' ? 'trip' : state.screen; }
+function applySheet() {
+  const sheet = document.querySelector('.sheet'), h = state.sheetH[sheetKey()];
+  if (sheet) sheet.dataset.natural = sheet.offsetHeight;
+  if (sheet && h) { sheet.style.height = h + 'px'; sheet.style.maxHeight = 'none'; }
+  placeCredit();
+}
+function placeCredit() {
+  const sheet = document.querySelector('.sheet'), credit = document.getElementById('osm');
+  credit.hidden = !sheet;
+  if (sheet) credit.style.bottom = sheet.offsetHeight + 6 + 'px';
+}
+// snap points, like iOS: collapsed, the sheet's own size, and open to near the top
+function snapPoints(sheet) {
+  const appH = document.getElementById('app').clientHeight;
+  return [SHEET_PEEK_PX, +sheet.dataset.natural, appH - SHEET_TOP_GAP_PX];
+}
+document.addEventListener('pointerdown', (e) => {
+  const zone = e.target.closest('.handle-zone');
+  if (!zone) return;
+  const sheet = zone.closest('.sheet');
+  zone.setPointerCapture(e.pointerId);
+  sheet.classList.remove('snapping');
+  sheetDrag = { sheet, y0: e.clientY, h0: sheet.offsetHeight, moved: false, y: e.clientY, t: e.timeStamp, v: 0 };
+});
+document.addEventListener('pointermove', (e) => {
+  if (!sheetDrag) return;
+  const d = sheetDrag, dy = e.clientY - d.y0;
+  if (Math.abs(dy) > 4) d.moved = true;
+  if (e.timeStamp > d.t) d.v = (e.clientY - d.y) / (e.timeStamp - d.t);  // px per ms, down is positive
+  d.y = e.clientY; d.t = e.timeStamp;
+  const pts = snapPoints(d.sheet);
+  d.sheet.style.height = Math.min(pts[2], Math.max(pts[0], d.h0 - dy)) + 'px';
+  d.sheet.style.maxHeight = 'none';
+  placeCredit();
+});
+function endSheetDrag() {
+  if (!sheetDrag) return;
+  const d = sheetDrag, pts = snapPoints(d.sheet), h = d.sheet.offsetHeight;
+  sheetDrag = null;
+  let to;
+  if (!d.moved) to = h < pts[2] - 8 ? pts[2] : pts[1];        // tap: open fully, or back to its own size
+  else {
+    const aim = h - d.v * 180;                                 // a flick carries on past where the finger stopped
+    to = pts.reduce((a, b) => Math.abs(b - aim) < Math.abs(a - aim) ? b : a);
+  }
+  if (to === pts[1]) delete state.sheetH[sheetKey()]; else state.sheetH[sheetKey()] = to;
+  const app = document.getElementById('app');
+  d.sheet.classList.add('snapping'); app.classList.add('snapping');
+  d.sheet.style.height = to + 'px';
+  placeCredit();
+  setTimeout(() => { app.classList.remove('snapping'); render(); }, 260);
+}
+document.addEventListener('pointerup', endSheetDrag);
+document.addEventListener('pointercancel', endSheetDrag);
 
 document.addEventListener('click', (e) => {
   const t = e.target.closest('button');
