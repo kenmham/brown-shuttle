@@ -1,0 +1,4586 @@
+[
+{
+"name": "1 Davol Square",
+"alt": "",
+"address": "1 Davol Square",
+"kind": "commercial",
+"lat": 41.817351,
+"lng": -71.406211
+},
+{
+"name": "121 South Main Street",
+"alt": "",
+"address": "121 South Main Street",
+"kind": "university",
+"lat": 41.824115,
+"lng": -71.407086
+},
+{
+"name": "164 Angel",
+"alt": "Brown Office Building",
+"address": "164-176 Angell Street",
+"kind": "yes",
+"lat": 41.828307,
+"lng": -71.401116
+},
+{
+"name": "169 Angell",
+"alt": "",
+"address": "169 Angell Street",
+"kind": "yes",
+"lat": 41.827872,
+"lng": -71.40085
+},
+{
+"name": "173 Benefit Street",
+"alt": "",
+"address": "173 Benefit Street",
+"kind": "yes",
+"lat": 41.828509,
+"lng": -71.408037
+},
+{
+"name": "1736 Antram-Gray House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.831316,
+"lng": -71.410781
+},
+{
+"name": "180 George",
+"alt": "",
+"address": "180 George Street",
+"kind": "university",
+"lat": 41.825925,
+"lng": -71.398775
+},
+{
+"name": "182 George",
+"alt": "",
+"address": "182 George Street",
+"kind": "university",
+"lat": 41.825959,
+"lng": -71.398359
+},
+{
+"name": "1890 House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.820794,
+"lng": -71.417541
+},
+{
+"name": "2 Charles Street",
+"alt": "",
+"address": "",
+"kind": "parking",
+"lat": 41.83297,
+"lng": -71.411647
+},
+{
+"name": "219 Bowen",
+"alt": "",
+"address": "219 Bowen Street",
+"kind": "yes",
+"lat": 41.830623,
+"lng": -71.401733
+},
+{
+"name": "26 Ship St.",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.819155,
+"lng": -71.408523
+},
+{
+"name": "3 Davol Square",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817646,
+"lng": -71.406171
+},
+{
+"name": "42 Elm Street",
+"alt": "",
+"address": "43 Elm Street",
+"kind": "yes",
+"lat": 41.818233,
+"lng": -71.407887
+},
+{
+"name": "50 Kennedy Plaza",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824941,
+"lng": -71.410588
+},
+{
+"name": "580 South Water",
+"alt": "",
+"address": "580 South Water Street",
+"kind": "apartments",
+"lat": 41.817384,
+"lng": -71.400213
+},
+{
+"name": "66 South Main",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824928,
+"lng": -71.406906
+},
+{
+"name": "67 George",
+"alt": "",
+"address": "67 George Street",
+"kind": "yes",
+"lat": 41.825133,
+"lng": -71.403539
+},
+{
+"name": "70 Brown Street",
+"alt": "",
+"address": "70 Brown Street",
+"kind": "university",
+"lat": 41.827605,
+"lng": -71.403444
+},
+{
+"name": "86 Waterman",
+"alt": "",
+"address": "86 Waterman Street",
+"kind": "yes",
+"lat": 41.827329,
+"lng": -71.402059
+},
+{
+"name": "A New Leaf",
+"alt": "",
+"address": "135 Gano Street",
+"kind": "commercial",
+"lat": 41.823342,
+"lng": -71.389843
+},
+{
+"name": "Adler's Design Center & Hardware",
+"alt": "",
+"address": "173 Wickenden Street",
+"kind": "yes",
+"lat": 41.819072,
+"lng": -71.399787
+},
+{
+"name": "Advanced Dental Care",
+"alt": "",
+"address": "433 Lloyd Avenue",
+"kind": "yes",
+"lat": 41.834125,
+"lng": -71.390055
+},
+{
+"name": "Al Forno",
+"alt": "",
+"address": "577 South Water Street",
+"kind": "yes",
+"lat": 41.817287,
+"lng": -71.400662
+},
+{
+"name": "Aldrich Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822584,
+"lng": -71.409721
+},
+{
+"name": "Aldrich Estate Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82366,
+"lng": -71.413204
+},
+{
+"name": "Aldrich House",
+"alt": "",
+"address": "110 Benevolent Street",
+"kind": "yes",
+"lat": 41.825378,
+"lng": -71.395719
+},
+{
+"name": "Alice Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822723,
+"lng": -71.412505
+},
+{
+"name": "All Saints Memorial Church",
+"alt": "",
+"address": "",
+"kind": "church",
+"lat": 41.818434,
+"lng": -71.418865
+},
+{
+"name": "Allenberry Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.808412,
+"lng": -71.41521
+},
+{
+"name": "Aloft",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.821105,
+"lng": -71.408714
+},
+{
+"name": "Alumnae Hall",
+"alt": "",
+"address": "194 Meeting Street",
+"kind": "yes",
+"lat": 41.82959,
+"lng": -71.402145
+},
+{
+"name": "Alumni East Apartments",
+"alt": "",
+"address": "331 Hope Street",
+"kind": "apartments",
+"lat": 41.834449,
+"lng": -71.401
+},
+{
+"name": "Amazing Intimate Essentials",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.837924,
+"lng": -71.414619
+},
+{
+"name": "American Mathematical Society",
+"alt": "",
+"address": "201 Charles Street",
+"kind": "yes",
+"lat": 41.837098,
+"lng": -71.412236
+},
+{
+"name": "American Red Cross",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822124,
+"lng": -71.389711
+},
+{
+"name": "Amica Mutual Pavilion",
+"alt": "Dunkin' Donuts Center;Providence Civic Center",
+"address": "1 LaSalle Square",
+"kind": "yes",
+"lat": 41.823507,
+"lng": -71.41806
+},
+{
+"name": "Anderson Emergency and Bridge Inpatient Building",
+"alt": "",
+"address": "",
+"kind": "hospital",
+"lat": 41.810627,
+"lng": -71.409067
+},
+{
+"name": "Andrews Commons",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.830407,
+"lng": -71.402529
+},
+{
+"name": "Andrews Hall",
+"alt": "",
+"address": "211 Bowen Street",
+"kind": "dormitory",
+"lat": 41.830496,
+"lng": -71.402499
+},
+{
+"name": "Andrews House",
+"alt": "",
+"address": "13 Brown Street",
+"kind": "university",
+"lat": 41.823905,
+"lng": -71.402394
+},
+{
+"name": "Andrews Memorial Building",
+"alt": "",
+"address": "295 Lloyd Avenue",
+"kind": "yes",
+"lat": 41.833,
+"lng": -71.395519
+},
+{
+"name": "Angell Hall",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828527,
+"lng": -71.398167
+},
+{
+"name": "Angell Street Studios",
+"alt": "",
+"address": "52 Angell Street",
+"kind": "yes",
+"lat": 41.827838,
+"lng": -71.405792
+},
+{
+"name": "Annex",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.825184,
+"lng": -71.399588
+},
+{
+"name": "Annmary Brown Memorial",
+"alt": "",
+"address": "21 Brown Street",
+"kind": "yes",
+"lat": 41.824284,
+"lng": -71.402289
+},
+{
+"name": "Applied Math Building",
+"alt": "",
+"address": "170 George Street",
+"kind": "university",
+"lat": 41.826047,
+"lng": -71.397659
+},
+{
+"name": "Archibald-Bronson House",
+"alt": "",
+"address": "17 Benevolent Street",
+"kind": "dormitory",
+"lat": 41.824152,
+"lng": -71.402985
+},
+{
+"name": "Arnold Lab",
+"alt": "",
+"address": "91 Waterman Street",
+"kind": "university",
+"lat": 41.826983,
+"lng": -71.401178
+},
+{
+"name": "Asa W. Armington House",
+"alt": "",
+"address": "106 Williams Street",
+"kind": "house",
+"lat": 41.822504,
+"lng": -71.400553
+},
+{
+"name": "Asterfields",
+"alt": "",
+"address": "5 Traverse Street",
+"kind": "yes",
+"lat": 41.819649,
+"lng": -71.399862
+},
+{
+"name": "Athenaeum Row",
+"alt": "",
+"address": "",
+"kind": "terrace",
+"lat": 41.825558,
+"lng": -71.40616
+},
+{
+"name": "Atlantic Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823679,
+"lng": -71.410362
+},
+{
+"name": "Auditorium Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.82608,
+"lng": -71.408703
+},
+{
+"name": "Avalon",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.82837,
+"lng": -71.412421
+},
+{
+"name": "Avery Building",
+"alt": "",
+"address": "",
+"kind": "commercial",
+"lat": 41.820817,
+"lng": -71.412806
+},
+{
+"name": "Avis",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824627,
+"lng": -71.413969
+},
+{
+"name": "BERT",
+"alt": "",
+"address": "85 Waterman Street",
+"kind": "school",
+"lat": 41.826901,
+"lng": -71.401927
+},
+{
+"name": "Baker House",
+"alt": "",
+"address": "217 Hope Street",
+"kind": "school",
+"lat": 41.829375,
+"lng": -71.397827
+},
+{
+"name": "Banigan Building",
+"alt": "Amica Building",
+"address": "",
+"kind": "office",
+"lat": 41.824567,
+"lng": -71.409069
+},
+{
+"name": "Bank Building",
+"alt": "Peoples Savings Bank",
+"address": "",
+"kind": "university",
+"lat": 41.826045,
+"lng": -71.407662
+},
+{
+"name": "Bank of North America Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824003,
+"lng": -71.409422
+},
+{
+"name": "Barker Playhouse",
+"alt": "",
+"address": "400 Benefit Street",
+"kind": "yes",
+"lat": 41.820475,
+"lng": -71.402065
+},
+{
+"name": "Barstow House",
+"alt": "",
+"address": "62 Waterman Street",
+"kind": "yes",
+"lat": 41.82714,
+"lng": -71.404946
+},
+{
+"name": "Barus & Holley",
+"alt": "",
+"address": "184 Hope Street",
+"kind": "university",
+"lat": 41.82647,
+"lng": -71.397844
+},
+{
+"name": "Barus Building",
+"alt": "",
+"address": "340 Brook Street",
+"kind": "university",
+"lat": 41.826262,
+"lng": -71.399337
+},
+{
+"name": "Bay Tower Medical Center",
+"alt": "",
+"address": "101 Plain Street",
+"kind": "yes",
+"lat": 41.813479,
+"lng": -71.412756
+},
+{
+"name": "Bayard Ewing Building, RISD Architecture Building",
+"alt": "",
+"address": "231 South Main Street",
+"kind": "school",
+"lat": 41.822697,
+"lng": -71.405776
+},
+{
+"name": "Bayside Professional Building",
+"alt": "",
+"address": "235 Plain Street",
+"kind": "yes",
+"lat": 41.809107,
+"lng": -71.411143
+},
+{
+"name": "Beneficent Congregational Church",
+"alt": "",
+"address": "",
+"kind": "church",
+"lat": 41.820011,
+"lng": -71.413519
+},
+{
+"name": "Beneficent House",
+"alt": "",
+"address": "1 Chestnut Street",
+"kind": "apartments",
+"lat": 41.819464,
+"lng": -71.414246
+},
+{
+"name": "Benson Hall",
+"alt": "",
+"address": "235 Benefit Street",
+"kind": "yes",
+"lat": 41.826473,
+"lng": -71.406792
+},
+{
+"name": "Big Blue Bug Solutions",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.807109,
+"lng": -71.405827
+},
+{
+"name": "Biltmore Garage",
+"alt": "",
+"address": "51 Washington Street",
+"kind": "yes",
+"lat": 41.824039,
+"lng": -71.414041
+},
+{
+"name": "BioMed Center ACF",
+"alt": "",
+"address": "73 Meeting Street",
+"kind": "university",
+"lat": 41.82859,
+"lng": -71.402468
+},
+{
+"name": "Biomedical Center",
+"alt": "",
+"address": "171 Meeting Street",
+"kind": "university",
+"lat": 41.828554,
+"lng": -71.402918
+},
+{
+"name": "Blick Art Materials",
+"alt": "",
+"address": "200 Wickenden Street",
+"kind": "yes",
+"lat": 41.819576,
+"lng": -71.399392
+},
+{
+"name": "Blistein House",
+"alt": "",
+"address": "57 Waterman Street",
+"kind": "university",
+"lat": 41.826745,
+"lng": -71.405181
+},
+{
+"name": "Books On the Square",
+"alt": "",
+"address": "471 Angell Street",
+"kind": "yes",
+"lat": 41.829805,
+"lng": -71.389012
+},
+{
+"name": "Boston Sports Clubs",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.825572,
+"lng": -71.387726
+},
+{
+"name": "Boys & Girls Club",
+"alt": "",
+"address": "530 Wickenden Street",
+"kind": "yes",
+"lat": 41.820622,
+"lng": -71.392423
+},
+{
+"name": "Brown Bee Coffee",
+"alt": "",
+"address": "404 Benefit Street",
+"kind": "commercial",
+"lat": 41.820245,
+"lng": -71.401708
+},
+{
+"name": "Brown Center for Students of Color",
+"alt": "Third World Center",
+"address": "68 Brown Street",
+"kind": "yes",
+"lat": 41.827244,
+"lng": -71.403303
+},
+{
+"name": "Brown Fox Point Early Childhood Education Center",
+"alt": "",
+"address": "150 Hope Street",
+"kind": "yes",
+"lat": 41.824647,
+"lng": -71.397588
+},
+{
+"name": "Brown University Department of Modern Culture and Media",
+"alt": "",
+"address": "155 George Street",
+"kind": "house",
+"lat": 41.825378,
+"lng": -71.39971
+},
+{
+"name": "Burgess Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82287,
+"lng": -71.412361
+},
+{
+"name": "Buxton House",
+"alt": "Buxton International House",
+"address": "27 Brown Street",
+"kind": "dormitory",
+"lat": 41.8245,
+"lng": -71.402359
+},
+{
+"name": "CVS Pharmacy",
+"alt": "",
+"address": "291 Thayer Street",
+"kind": "yes",
+"lat": 41.829953,
+"lng": -71.400671
+},
+{
+"name": "Caleb Earle House",
+"alt": "",
+"address": "81 Power Street",
+"kind": "yes",
+"lat": 41.822742,
+"lng": -71.401277
+},
+{
+"name": "Caleb Roffee House",
+"alt": "",
+"address": "92 Williams Street",
+"kind": "house",
+"lat": 41.822431,
+"lng": -71.401051
+},
+{
+"name": "Campus Operations Center",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.829317,
+"lng": -71.397453
+},
+{
+"name": "Canal Street Studios",
+"alt": "Apparel Building",
+"address": "189 Canal Street",
+"kind": "yes",
+"lat": 41.828101,
+"lng": -71.410127
+},
+{
+"name": "Cancer Center and APC",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.811873,
+"lng": -71.410262
+},
+{
+"name": "Candace Allen Carriage House",
+"alt": "",
+"address": "2 Magee Street",
+"kind": "yes",
+"lat": 41.824857,
+"lng": -71.404856
+},
+{
+"name": "Candace Allen House",
+"alt": "",
+"address": "12 Benevolent Street",
+"kind": "house",
+"lat": 41.824815,
+"lng": -71.404409
+},
+{
+"name": "Capital Gulf",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.832626,
+"lng": -71.418453
+},
+{
+"name": "Captain George Benson House",
+"alt": "",
+"address": "64 Angell Street",
+"kind": "yes",
+"lat": 41.827982,
+"lng": -71.405313
+},
+{
+"name": "Carpenter House",
+"alt": "",
+"address": "1 Congdon Street",
+"kind": "yes",
+"lat": 41.827808,
+"lng": -71.406542
+},
+{
+"name": "Carr House",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.827085,
+"lng": -71.40765
+},
+{
+"name": "Carrie Tower",
+"alt": "",
+"address": "69 Waterman Street",
+"kind": "university",
+"lat": 41.826782,
+"lng": -71.404481
+},
+{
+"name": "Case-Mead Building",
+"alt": "",
+"address": "76 Dorrance Street",
+"kind": "office",
+"lat": 41.823358,
+"lng": -71.411056
+},
+{
+"name": "Caswell Hall",
+"alt": "",
+"address": "168 Thayer Street",
+"kind": "dormitory",
+"lat": 41.826126,
+"lng": -71.400651
+},
+{
+"name": "Cathedral Square Apartments I",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.819982,
+"lng": -71.416242
+},
+{
+"name": "Cathedral Square Apartments II",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.820288,
+"lng": -71.416748
+},
+{
+"name": "Cathedral of Saint John the Episcopal",
+"alt": "Kings Church",
+"address": "",
+"kind": "church",
+"lat": 41.831096,
+"lng": -71.40999
+},
+{
+"name": "Central Baptist Church",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.834726,
+"lng": -71.389838
+},
+{
+"name": "Central Congregational Church",
+"alt": "",
+"address": "296 Angell Street",
+"kind": "yes",
+"lat": 41.828968,
+"lng": -71.39606
+},
+{
+"name": "Central Heating Plant",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.831947,
+"lng": -71.397326
+},
+{
+"name": "Central Meat Market",
+"alt": "",
+"address": "113 Gano Street",
+"kind": "yes",
+"lat": 41.822344,
+"lng": -71.389619
+},
+{
+"name": "Chace Center",
+"alt": "",
+"address": "20 South Main Street",
+"kind": "university",
+"lat": 41.826213,
+"lng": -71.407786
+},
+{
+"name": "Champlin Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82097,
+"lng": -71.413363
+},
+{
+"name": "Champlin Hall",
+"alt": "",
+"address": "208 Meeting Street",
+"kind": "dormitory",
+"lat": 41.830169,
+"lng": -71.401764
+},
+{
+"name": "Chapin House",
+"alt": "Harambee House",
+"address": "116 Thayer Street",
+"kind": "dormitory",
+"lat": 41.824499,
+"lng": -71.400438
+},
+{
+"name": "Charles E. Tillinghast House",
+"alt": "",
+"address": "89 Power Street",
+"kind": "house",
+"lat": 41.82272,
+"lng": -71.400795
+},
+{
+"name": "Cheapside Building",
+"alt": "",
+"address": "30 North Main Street",
+"kind": "university",
+"lat": 41.826439,
+"lng": -71.408666
+},
+{
+"name": "Chen Family Hall",
+"alt": "",
+"address": "250 Brook Street",
+"kind": "dormitory",
+"lat": 41.823609,
+"lng": -71.399071
+},
+{
+"name": "Chestnut Commons",
+"alt": "",
+"address": "91 Chestnut Street",
+"kind": "residential",
+"lat": 41.818697,
+"lng": -71.412306
+},
+{
+"name": "Chomp Kitchen & Drinks",
+"alt": "",
+"address": "117 Ives Street",
+"kind": "yes",
+"lat": 41.821558,
+"lng": -71.391857
+},
+{
+"name": "Church of God",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.813955,
+"lng": -71.414539
+},
+{
+"name": "Churchill House",
+"alt": "",
+"address": "155 Angell Street",
+"kind": "yes",
+"lat": 41.827806,
+"lng": -71.401553
+},
+{
+"name": "Citizens Bank",
+"alt": "",
+"address": "118-120 Waterman Street",
+"kind": "office",
+"lat": 41.827619,
+"lng": -71.399135
+},
+{
+"name": "City Kitty",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.837267,
+"lng": -71.401103
+},
+{
+"name": "Clark Alumni House",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.829167,
+"lng": -71.398795
+},
+{
+"name": "Classical High School Athletic Building",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.816658,
+"lng": -71.419975
+},
+{
+"name": "Classical High School Auditorium",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817239,
+"lng": -71.420342
+},
+{
+"name": "Classical High School Cafeteria",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.816984,
+"lng": -71.419978
+},
+{
+"name": "College Building",
+"alt": "",
+"address": "236 Benefit Street",
+"kind": "university",
+"lat": 41.826013,
+"lng": -71.407504
+},
+{
+"name": "Colonial Apartments",
+"alt": "",
+"address": "175-185 Benefit Street",
+"kind": "apartments",
+"lat": 41.828428,
+"lng": -71.407754
+},
+{
+"name": "Community Boating Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817015,
+"lng": -71.397169
+},
+{
+"name": "Community Prepatory",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.811057,
+"lng": -71.416326
+},
+{
+"name": "Congdon House",
+"alt": "",
+"address": "2 Congdon Street",
+"kind": "house",
+"lat": 41.827816,
+"lng": -71.406836
+},
+{
+"name": "Congdon Street Baptist Church",
+"alt": "",
+"address": "17 Congdon Street",
+"kind": "yes",
+"lat": 41.828245,
+"lng": -71.406593
+},
+{
+"name": "Conrad Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.821405,
+"lng": -71.415131
+},
+{
+"name": "Corliss–Brackett House",
+"alt": "",
+"address": "45 Prospect Street",
+"kind": "yes",
+"lat": 41.82761,
+"lng": -71.40443
+},
+{
+"name": "Courtyard Providence Downtown",
+"alt": "",
+"address": "32 Exchange Terrace at Memorial Boulevard",
+"kind": "yes",
+"lat": 41.825772,
+"lng": -71.414489
+},
+{
+"name": "Crossroads",
+"alt": "",
+"address": "",
+"kind": "civic",
+"lat": 41.816871,
+"lng": -71.417026
+},
+{
+"name": "Cyrus Fisher House",
+"alt": "",
+"address": "86 Williams Street",
+"kind": "yes",
+"lat": 41.822435,
+"lng": -71.401293
+},
+{
+"name": "Daniel Dailey House",
+"alt": "",
+"address": "118 Williams Street",
+"kind": "yes",
+"lat": 41.822531,
+"lng": -71.400174
+},
+{
+"name": "Davey Lopes Recreation Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.810336,
+"lng": -71.416555
+},
+{
+"name": "Davol Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.81121,
+"lng": -71.40864
+},
+{
+"name": "Davol Square Marketplace",
+"alt": "The Davol Rubber Company",
+"address": "",
+"kind": "yes",
+"lat": 41.817385,
+"lng": -71.40657
+},
+{
+"name": "Del Sesto Building",
+"alt": "Summerfield Building",
+"address": "",
+"kind": "yes",
+"lat": 41.82042,
+"lng": -71.413072
+},
+{
+"name": "Department of Public Safety",
+"alt": "",
+"address": "75 Charlesfield Street",
+"kind": "yes",
+"lat": 41.824251,
+"lng": -71.39822
+},
+{
+"name": "Dexter House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.828161,
+"lng": -71.407665
+},
+{
+"name": "Dexter Manor",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.818142,
+"lng": -71.41514
+},
+{
+"name": "Diman House",
+"alt": "Social Action House",
+"address": "41 Charlesfield Street",
+"kind": "dormitory",
+"lat": 41.824478,
+"lng": -71.401507
+},
+{
+"name": "Diocese of Providence Chancery Office",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.81937,
+"lng": -71.417532
+},
+{
+"name": "Dolores",
+"alt": "",
+"address": "100 Hope Street",
+"kind": "yes",
+"lat": 41.822031,
+"lng": -71.39682
+},
+{
+"name": "Dorrance Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823316,
+"lng": -71.411759
+},
+{
+"name": "Dr. Martin Luther King, Jr. Elementary School",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.83729,
+"lng": -71.403759
+},
+{
+"name": "Dunkin'",
+"alt": "Dunkin' Donuts",
+"address": "251 Smith Street",
+"kind": "yes",
+"lat": 41.833263,
+"lng": -71.420121
+},
+{
+"name": "Dunnell House",
+"alt": "",
+"address": "16 Angell Street",
+"kind": "yes",
+"lat": 41.827722,
+"lng": -71.407102
+},
+{
+"name": "Dwight Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.820714,
+"lng": -71.412925
+},
+{
+"name": "Dwight House",
+"alt": "",
+"address": "",
+"kind": "house",
+"lat": 41.827847,
+"lng": -71.407538
+},
+{
+"name": "Dyer",
+"alt": "",
+"address": "150 Power Street",
+"kind": "yes",
+"lat": 41.823468,
+"lng": -71.396508
+},
+{
+"name": "EGO Providence",
+"alt": "",
+"address": "73 Richmond Street",
+"kind": "yes",
+"lat": 41.820267,
+"lng": -71.411513
+},
+{
+"name": "East Hall",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827078,
+"lng": -71.405698
+},
+{
+"name": "East Side Nursery School",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.835297,
+"lng": -71.389252
+},
+{
+"name": "Eastside Veterinary Clinic",
+"alt": "",
+"address": "265 Gano Street",
+"kind": "yes",
+"lat": 41.828707,
+"lng": -71.390615
+},
+{
+"name": "Ed's Barber Shop",
+"alt": "",
+"address": "146 Wayland Avenue",
+"kind": "commercial",
+"lat": 41.828066,
+"lng": -71.388735
+},
+{
+"name": "Edge College Hill Apartments",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827884,
+"lng": -71.41002
+},
+{
+"name": "Edward S. Underwood House",
+"alt": "",
+"address": "28",
+"kind": "house",
+"lat": 41.82186,
+"lng": -71.399775
+},
+{
+"name": "Elisha Wells House",
+"alt": "",
+"address": "30 John Street",
+"kind": "house",
+"lat": 41.821867,
+"lng": -71.399629
+},
+{
+"name": "Emblem 125",
+"alt": "",
+"address": "125 Clifford Street",
+"kind": "apartments",
+"lat": 41.819485,
+"lng": -71.411416
+},
+{
+"name": "Emergency/Dudley Street Parking",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.810131,
+"lng": -71.409577
+},
+{
+"name": "Emery Hall",
+"alt": "",
+"address": "200 Meeting Street",
+"kind": "dormitory",
+"lat": 41.829409,
+"lng": -71.401731
+},
+{
+"name": "Engineering Research Center",
+"alt": "",
+"address": "345 Brook Street",
+"kind": "university",
+"lat": 41.826356,
+"lng": -71.398528
+},
+{
+"name": "Equitable Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824209,
+"lng": -71.40957
+},
+{
+"name": "Everett-Poland Building",
+"alt": "",
+"address": "13 Benevolent Street",
+"kind": "dormitory",
+"lat": 41.824277,
+"lng": -71.403347
+},
+{
+"name": "Ewing Multicultural Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.826542,
+"lng": -71.406617
+},
+{
+"name": "Exchange Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.825174,
+"lng": -71.410492
+},
+{
+"name": "Faculty Club",
+"alt": "",
+"address": "1 Magee Street",
+"kind": "yes",
+"lat": 41.824833,
+"lng": -71.403666
+},
+{
+"name": "Farago Wing",
+"alt": "",
+"address": "",
+"kind": "museum",
+"lat": 41.826663,
+"lng": -71.40775
+},
+{
+"name": "Feinstein",
+"alt": "",
+"address": "130 Hope Street",
+"kind": "yes",
+"lat": 41.823742,
+"lng": -71.397369
+},
+{
+"name": "Fire House",
+"alt": "",
+"address": "305 South Main Street",
+"kind": "yes",
+"lat": 41.821874,
+"lng": -71.404853
+},
+{
+"name": "First Baptist Church in America",
+"alt": "",
+"address": "75 North Main Street",
+"kind": "church",
+"lat": 41.827468,
+"lng": -71.408267
+},
+{
+"name": "First Church of Christ, Scientist",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.829145,
+"lng": -71.404747
+},
+{
+"name": "First Unitarian Church of Providence",
+"alt": "",
+"address": "1 Benevolent Street",
+"kind": "church",
+"lat": 41.824393,
+"lng": -71.404982
+},
+{
+"name": "Fish Co.",
+"alt": "",
+"address": "15 Bridge Street",
+"kind": "yes",
+"lat": 41.818055,
+"lng": -71.402344
+},
+{
+"name": "Fletcher Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822588,
+"lng": -71.412166
+},
+{
+"name": "Fox Point Center",
+"alt": "",
+"address": "42 Schofield Street",
+"kind": "yes",
+"lat": 41.819954,
+"lng": -71.39151
+},
+{
+"name": "Fox Point Fire Station",
+"alt": "",
+"address": "223 Brook Street",
+"kind": "fire_station",
+"lat": 41.822811,
+"lng": -71.398423
+},
+{
+"name": "Fox Point Grocers",
+"alt": "",
+"address": "107 Hope Street",
+"kind": "yes",
+"lat": 41.822177,
+"lng": -71.396483
+},
+{
+"name": "Foxy Lady",
+"alt": "",
+"address": "",
+"kind": "commercial",
+"lat": 41.836346,
+"lng": -71.418872
+},
+{
+"name": "Freeway Garage",
+"alt": "",
+"address": "36 Pine Street",
+"kind": "yes",
+"lat": 41.823125,
+"lng": -71.409048
+},
+{
+"name": "Fresh Air Building",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828874,
+"lng": -71.397982
+},
+{
+"name": "Friedman Hall",
+"alt": "Wilson Hall",
+"address": "90 Waterman Street",
+"kind": "university",
+"lat": 41.825901,
+"lng": -71.402549
+},
+{
+"name": "Gano Market",
+"alt": "",
+"address": "149 Gano Street",
+"kind": "commercial",
+"lat": 41.823627,
+"lng": -71.389832
+},
+{
+"name": "Gardel",
+"alt": "",
+"address": "104 Ives Street",
+"kind": "house",
+"lat": 41.82109,
+"lng": -71.392062
+},
+{
+"name": "Gardener Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824112,
+"lng": -71.414946
+},
+{
+"name": "Gardner House",
+"alt": "",
+"address": "106 George Street",
+"kind": "yes",
+"lat": 41.825596,
+"lng": -71.401803
+},
+{
+"name": "Gardner House - Garage",
+"alt": "",
+"address": "",
+"kind": "garage",
+"lat": 41.825749,
+"lng": -71.401786
+},
+{
+"name": "Garrahy Garage",
+"alt": "",
+"address": "181 Dorrance Street",
+"kind": "yes",
+"lat": 41.820623,
+"lng": -71.41029
+},
+{
+"name": "Garrahy Judicial Complex",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.821374,
+"lng": -71.409563
+},
+{
+"name": "Gateway Center",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.828338,
+"lng": -71.413764
+},
+{
+"name": "GeoChem Building",
+"alt": "",
+"address": "156 George Street",
+"kind": "university",
+"lat": 41.825888,
+"lng": -71.39964
+},
+{
+"name": "George C. Arnold Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823124,
+"lng": -71.41451
+},
+{
+"name": "George Corlis House",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822969,
+"lng": -71.40591
+},
+{
+"name": "Gerard House",
+"alt": "",
+"address": "54 College Street",
+"kind": "house",
+"lat": 41.826347,
+"lng": -71.405987
+},
+{
+"name": "German Department",
+"alt": "",
+"address": "190 Hope Street",
+"kind": "house",
+"lat": 41.82735,
+"lng": -71.397511
+},
+{
+"name": "Gerry House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.813097,
+"lng": -71.410741
+},
+{
+"name": "Giddings House",
+"alt": "",
+"address": "128 Hope Street",
+"kind": "university",
+"lat": 41.823572,
+"lng": -71.397361
+},
+{
+"name": "Giddings House - Garage",
+"alt": "",
+"address": "128 Hope Street",
+"kind": "garage",
+"lat": 41.823322,
+"lng": -71.397566
+},
+{
+"name": "Gilbane Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.81946,
+"lng": -71.415683
+},
+{
+"name": "Gilder Center For The Arts",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.82856,
+"lng": -71.398704
+},
+{
+"name": "Goddard",
+"alt": "",
+"address": "39 Charlesfield Street",
+"kind": "dormitory",
+"lat": 41.824145,
+"lng": -71.401245
+},
+{
+"name": "Grace Apartments",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.820265,
+"lng": -71.417829
+},
+{
+"name": "Grace Episcopal Church",
+"alt": "",
+"address": "Westminster Street",
+"kind": "yes",
+"lat": 41.821828,
+"lng": -71.413517
+},
+{
+"name": "Grace Harbor Church",
+"alt": "",
+"address": "47 Fenner Street",
+"kind": "yes",
+"lat": 41.818457,
+"lng": -71.416815
+},
+{
+"name": "Graduate Center A",
+"alt": "",
+"address": "40 Charlesfield Street",
+"kind": "dormitory",
+"lat": 41.823111,
+"lng": -71.400963
+},
+{
+"name": "Graduate Center B",
+"alt": "",
+"address": "44 Charlesfield Street",
+"kind": "dormitory",
+"lat": 41.8236,
+"lng": -71.401024
+},
+{
+"name": "Graduate Center C",
+"alt": "",
+"address": "82 Thayer Street",
+"kind": "dormitory",
+"lat": 41.823161,
+"lng": -71.400343
+},
+{
+"name": "Graduate Center D",
+"alt": "",
+"address": "90 Thayer Street",
+"kind": "dormitory",
+"lat": 41.823667,
+"lng": -71.400407
+},
+{
+"name": "Graduate Center E",
+"alt": "",
+"address": "42 Charlesfield Street",
+"kind": "yes",
+"lat": 41.823391,
+"lng": -71.40067
+},
+{
+"name": "Graduate by Hilton Providence",
+"alt": "Providence Biltmore Hotel",
+"address": "11 Dorrance Street",
+"kind": "hotel",
+"lat": 41.824427,
+"lng": -71.413394
+},
+{
+"name": "Grant-Fulton",
+"alt": "",
+"address": "105 Benevolent Street",
+"kind": "yes",
+"lat": 41.824927,
+"lng": -71.396764
+},
+{
+"name": "Grimshaw-Gudewicz Biomedical Building",
+"alt": "",
+"address": "81-89 Brown Street",
+"kind": "university",
+"lat": 41.828688,
+"lng": -71.402265
+},
+{
+"name": "Grixy's Grooming",
+"alt": "",
+"address": "",
+"kind": "commercial",
+"lat": 41.820431,
+"lng": -71.39391
+},
+{
+"name": "Grosvenor Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.811423,
+"lng": -71.410051
+},
+{
+"name": "Hall's Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824064,
+"lng": -71.409998
+},
+{
+"name": "Hamilton House",
+"alt": "",
+"address": "",
+"kind": "house",
+"lat": 41.828898,
+"lng": -71.396609
+},
+{
+"name": "Hanley Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822875,
+"lng": -71.409388
+},
+{
+"name": "Hannah Greene Estate Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823223,
+"lng": -71.412579
+},
+{
+"name": "HarborOne Bank",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822186,
+"lng": -71.415622
+},
+{
+"name": "Harkness House",
+"alt": "Tech House",
+"address": "47 Charlesfield Street",
+"kind": "dormitory",
+"lat": 41.824022,
+"lng": -71.400699
+},
+{
+"name": "Hay Buildings",
+"alt": "",
+"address": "117-135 Dyer Street",
+"kind": "commercial",
+"lat": 41.823362,
+"lng": -71.408594
+},
+{
+"name": "Hazbro Childrens Hospital",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.811313,
+"lng": -71.408009
+},
+{
+"name": "Hegeman Hall",
+"alt": "",
+"address": "128 George Street",
+"kind": "dormitory",
+"lat": 41.825868,
+"lng": -71.400781
+},
+{
+"name": "Hemisphere Building",
+"alt": "",
+"address": "167 Angell Street",
+"kind": "yes",
+"lat": 41.827872,
+"lng": -71.401089
+},
+{
+"name": "Hillel House",
+"alt": "",
+"address": "80 Brown Street",
+"kind": "yes",
+"lat": 41.828047,
+"lng": -71.403589
+},
+{
+"name": "Hilton Providence",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822945,
+"lng": -71.418556
+},
+{
+"name": "Hiram Hill House",
+"alt": "",
+"address": "85 Power Street",
+"kind": "house",
+"lat": 41.822723,
+"lng": -71.401043
+},
+{
+"name": "Hirschfeld House",
+"alt": "",
+"address": "163 George Street",
+"kind": "university",
+"lat": 41.825451,
+"lng": -71.399212
+},
+{
+"name": "Holy Rosary Catholic Church",
+"alt": "",
+"address": "21 Traverse Street",
+"kind": "church",
+"lat": 41.818591,
+"lng": -71.399579
+},
+{
+"name": "Homer Hall",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827395,
+"lng": -71.40657
+},
+{
+"name": "Homer-Nickerson Connector",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827433,
+"lng": -71.406003
+},
+{
+"name": "Homewood Suites",
+"alt": "",
+"address": "5 Exchange Street",
+"kind": "yes",
+"lat": 41.826639,
+"lng": -71.411474
+},
+{
+"name": "Hope Block",
+"alt": "",
+"address": "30 North Main Street",
+"kind": "university",
+"lat": 41.826354,
+"lng": -71.408616
+},
+{
+"name": "Hope Building",
+"alt": "",
+"address": "216 Hope Street",
+"kind": "school",
+"lat": 41.829101,
+"lng": -71.398308
+},
+{
+"name": "Hope Club",
+"alt": "",
+"address": "6 Benevolent Street",
+"kind": "yes",
+"lat": 41.824796,
+"lng": -71.405141
+},
+{
+"name": "Hope College",
+"alt": "",
+"address": "71 Waterman Street",
+"kind": "dormitory",
+"lat": 41.826739,
+"lng": -71.403863
+},
+{
+"name": "Hoppin House",
+"alt": "",
+"address": "383 Benefit Street",
+"kind": "yes",
+"lat": 41.821592,
+"lng": -71.402328
+},
+{
+"name": "Horace Mann House",
+"alt": "",
+"address": "47-49 George Street",
+"kind": "yes",
+"lat": 41.825078,
+"lng": -71.404311
+},
+{
+"name": "Hospital Trust Building",
+"alt": "Rhode Island Hospital Trust Building",
+"address": "",
+"kind": "office",
+"lat": 41.82561,
+"lng": -71.409689
+},
+{
+"name": "Hotel Providence",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822388,
+"lng": -71.414232
+},
+{
+"name": "Hughes Court",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824858,
+"lng": -71.401669
+},
+{
+"name": "IGT Building",
+"alt": "GTech Center",
+"address": "10 Memorial Boulevard",
+"kind": "commercial",
+"lat": 41.826492,
+"lng": -71.415088
+},
+{
+"name": "IGT Building Garage",
+"alt": "GTech Center Garage",
+"address": "",
+"kind": "yes",
+"lat": 41.826567,
+"lng": -71.414966
+},
+{
+"name": "Illustration Studies Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.826595,
+"lng": -71.409013
+},
+{
+"name": "Imperial Hall",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817585,
+"lng": -71.411243
+},
+{
+"name": "Industrial Design Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823156,
+"lng": -71.406439
+},
+{
+"name": "Industrial National Bank Building",
+"alt": "111 Westminster",
+"address": "",
+"kind": "office",
+"lat": 41.824456,
+"lng": -71.411164
+},
+{
+"name": "Irons and Russell Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.818711,
+"lng": -71.411948
+},
+{
+"name": "Isaac H. Pinkney House",
+"alt": "",
+"address": "48 North Court Street",
+"kind": "yes",
+"lat": 41.829323,
+"lng": -71.408932
+},
+{
+"name": "J.G. Eddy & Co. Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824057,
+"lng": -71.40917
+},
+{
+"name": "JR's Providence",
+"alt": "",
+"address": "371 Richmond Street",
+"kind": "yes",
+"lat": 41.816937,
+"lng": -71.407795
+},
+{
+"name": "James Burr House",
+"alt": "",
+"address": "98 Benefit Street",
+"kind": "house",
+"lat": 41.830803,
+"lng": -71.409171
+},
+{
+"name": "Jameson-Mead Building",
+"alt": "",
+"address": "11 Benevolent Street",
+"kind": "dormitory",
+"lat": 41.824147,
+"lng": -71.403738
+},
+{
+"name": "Jane Brown Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.812589,
+"lng": -71.409166
+},
+{
+"name": "Jerry's Artarama",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.838501,
+"lng": -71.408898
+},
+{
+"name": "John Brown House Museum",
+"alt": "",
+"address": "52 Power Street",
+"kind": "yes",
+"lat": 41.823161,
+"lng": -71.403333
+},
+{
+"name": "John Carter Brown Library",
+"alt": "",
+"address": "94 George Street",
+"kind": "university",
+"lat": 41.825613,
+"lng": -71.402439
+},
+{
+"name": "John D. Rockefeller Jr. Library",
+"alt": "Rockefeller Library",
+"address": "10 Prospect Street",
+"kind": "library",
+"lat": 41.825674,
+"lng": -71.405149
+},
+{
+"name": "John E. Fogarty Judicial Annex",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824391,
+"lng": -71.409319
+},
+{
+"name": "John Greene and Russell Potter House",
+"alt": "",
+"address": "51",
+"kind": "house",
+"lat": 41.822146,
+"lng": -71.39981
+},
+{
+"name": "John Hay Library",
+"alt": "",
+"address": "20-34 Prospect Street",
+"kind": "yes",
+"lat": 41.82643,
+"lng": -71.404966
+},
+{
+"name": "John O. Pastore Federal Building and Post Office",
+"alt": "",
+"address": "",
+"kind": "government",
+"lat": 41.826303,
+"lng": -71.410793
+},
+{
+"name": "Johnson & Wales University Center for Physician Assistant Studies",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.81819,
+"lng": -71.412413
+},
+{
+"name": "Johnson & Wales University John J Bowen Center for Science and Innovation",
+"alt": "",
+"address": "75 Chestnut Street",
+"kind": "university",
+"lat": 41.818952,
+"lng": -71.412911
+},
+{
+"name": "Johnson & Wales University Student Services Center",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.817837,
+"lng": -71.414029
+},
+{
+"name": "Johnson Hall",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.819207,
+"lng": -71.412833
+},
+{
+"name": "Johnson and Wales Academic Center",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822612,
+"lng": -71.413725
+},
+{
+"name": "Jonathan Treadwill House",
+"alt": "",
+"address": "44 North Court Street",
+"kind": "yes",
+"lat": 41.829346,
+"lng": -71.409167
+},
+{
+"name": "Joseph A. Doorley, Jr. Municipal Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.820641,
+"lng": -71.415426
+},
+{
+"name": "Kabob and Curry",
+"alt": "",
+"address": "261 Thayer Street",
+"kind": "yes",
+"lat": 41.828921,
+"lng": -71.400589
+},
+{
+"name": "Kennedy Plaza Intermodal Transportation Center",
+"alt": "Kennedy Plaza Transportation Center",
+"address": "",
+"kind": "yes",
+"lat": 41.824657,
+"lng": -71.412049
+},
+{
+"name": "Keystone Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.812121,
+"lng": -71.409509
+},
+{
+"name": "King House",
+"alt": "",
+"address": "154 Hope Street",
+"kind": "yes",
+"lat": 41.824908,
+"lng": -71.397462
+},
+{
+"name": "Kinsley Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.821715,
+"lng": -71.413984
+},
+{
+"name": "Kow Kow",
+"alt": "",
+"address": "120 Ives Street",
+"kind": "yes",
+"lat": 41.821443,
+"lng": -71.392162
+},
+{
+"name": "Kresge Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823715,
+"lng": -71.412307
+},
+{
+"name": "La Creperie",
+"alt": "",
+"address": "82 Fones Alley",
+"kind": "house",
+"lat": 41.828303,
+"lng": -71.400346
+},
+{
+"name": "Laborers’ International Union of North America",
+"alt": "",
+"address": "410 South Main Street",
+"kind": "office",
+"lat": 41.819645,
+"lng": -71.401742
+},
+{
+"name": "Lacrosse & Soccer Facility",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.83164,
+"lng": -71.396435
+},
+{
+"name": "Ladd Observatory",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.83913,
+"lng": -71.399122
+},
+{
+"name": "Larned House",
+"alt": "",
+"address": "71 Angell Street",
+"kind": "yes",
+"lat": 41.827529,
+"lng": -71.404949
+},
+{
+"name": "Lauderdale Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.82392,
+"lng": -71.410755
+},
+{
+"name": "Lifespan",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.815768,
+"lng": -71.411241
+},
+{
+"name": "Lincoln Field Building",
+"alt": "",
+"address": "180 Thayer Street",
+"kind": "university",
+"lat": 41.826006,
+"lng": -71.401261
+},
+{
+"name": "Lindemann Performing Arts Center",
+"alt": "",
+"address": "130 Angell Street",
+"kind": "yes",
+"lat": 41.828184,
+"lng": -71.402353
+},
+{
+"name": "Lippitt Hill Substation",
+"alt": "",
+"address": "83 Olney Street",
+"kind": "industrial",
+"lat": 41.835357,
+"lng": -71.405693
+},
+{
+"name": "Lippitt House",
+"alt": "",
+"address": "96 Waterman Street",
+"kind": "yes",
+"lat": 41.827438,
+"lng": -71.401334
+},
+{
+"name": "Lippitt House Museum",
+"alt": "",
+"address": "199 Hope Street",
+"kind": "yes",
+"lat": 41.82828,
+"lng": -71.397024
+},
+{
+"name": "List Art Building",
+"alt": "",
+"address": "62-64 College Street",
+"kind": "university",
+"lat": 41.826512,
+"lng": -71.405435
+},
+{
+"name": "Littlefield Hall",
+"alt": "",
+"address": "102 George Street",
+"kind": "dormitory",
+"lat": 41.825668,
+"lng": -71.402032
+},
+{
+"name": "Lucius Horton House",
+"alt": "",
+"address": "49/43 Thayer Street",
+"kind": "house",
+"lat": 41.822032,
+"lng": -71.399788
+},
+{
+"name": "Lyman Hall",
+"alt": "",
+"address": "83 Waterman Street",
+"kind": "yes",
+"lat": 41.82652,
+"lng": -71.401771
+},
+{
+"name": "MacMillan Hall",
+"alt": "",
+"address": "167 Thayer Street",
+"kind": "university",
+"lat": 41.826054,
+"lng": -71.400027
+},
+{
+"name": "Macfarlane House",
+"alt": "",
+"address": "48 College Street",
+"kind": "house",
+"lat": 41.826283,
+"lng": -71.406284
+},
+{
+"name": "Machado Garage",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.830243,
+"lng": -71.404223
+},
+{
+"name": "Machado House",
+"alt": "Ellen Dexter Sharp House",
+"address": "87 Prospect Street",
+"kind": "house",
+"lat": 41.830117,
+"lng": -71.404706
+},
+{
+"name": "Madden Gymnasium and Health Center",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828704,
+"lng": -71.399138
+},
+{
+"name": "Maddock Alumni Center",
+"alt": "",
+"address": "38 Brown Street",
+"kind": "yes",
+"lat": 41.825109,
+"lng": -71.403059
+},
+{
+"name": "Manning Hall",
+"alt": "",
+"address": "21 Prospect Street",
+"kind": "university",
+"lat": 41.826465,
+"lng": -71.403887
+},
+{
+"name": "Marathon",
+"alt": "",
+"address": "",
+"kind": "roof",
+"lat": 41.816905,
+"lng": -71.406873
+},
+{
+"name": "Marcy House",
+"alt": "",
+"address": "115 George Street",
+"kind": "dormitory",
+"lat": 41.824715,
+"lng": -71.401272
+},
+{
+"name": "Market House",
+"alt": "",
+"address": "4 South Main Street",
+"kind": "commercial",
+"lat": 41.825829,
+"lng": -71.408292
+},
+{
+"name": "Marston Boat House",
+"alt": "Marston Boathouse",
+"address": "",
+"kind": "university",
+"lat": 41.818351,
+"lng": -71.388628
+},
+{
+"name": "Marston Hall",
+"alt": "",
+"address": "346 Brook Street",
+"kind": "university",
+"lat": 41.826634,
+"lng": -71.399566
+},
+{
+"name": "Mathewson Street United Methodist Church",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82281,
+"lng": -71.413987
+},
+{
+"name": "Maxcy Hall",
+"alt": "",
+"address": "108 George Street",
+"kind": "university",
+"lat": 41.825926,
+"lng": -71.402009
+},
+{
+"name": "McDonald's",
+"alt": "",
+"address": "649 North Main Street",
+"kind": "retail",
+"lat": 41.838173,
+"lng": -71.408733
+},
+{
+"name": "McNulty Hall",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.821923,
+"lng": -71.410955
+},
+{
+"name": "Medical Research Lab",
+"alt": "",
+"address": "89 Waterman Street",
+"kind": "university",
+"lat": 41.826774,
+"lng": -71.401207
+},
+{
+"name": "Meehan Auditorium",
+"alt": "",
+"address": "235 Hope Street",
+"kind": "yes",
+"lat": 41.83127,
+"lng": -71.398865
+},
+{
+"name": "Meiklejohn House",
+"alt": "",
+"address": "159 George Street",
+"kind": "university",
+"lat": 41.825486,
+"lng": -71.399432
+},
+{
+"name": "Memorial Hall",
+"alt": "",
+"address": "226 Benefit Street",
+"kind": "university",
+"lat": 41.826303,
+"lng": -71.407325
+},
+{
+"name": "Mencoff Hall",
+"alt": "",
+"address": "68 Waterman Street",
+"kind": "yes",
+"lat": 41.827252,
+"lng": -71.404093
+},
+{
+"name": "Mercantile Block",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823025,
+"lng": -71.415341
+},
+{
+"name": "Merchants Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82514,
+"lng": -71.409362
+},
+{
+"name": "Metcalf Building",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.826579,
+"lng": -71.408236
+},
+{
+"name": "Metcalf Hall",
+"alt": "",
+"address": "98 Cushing Street",
+"kind": "dormitory",
+"lat": 41.830211,
+"lng": -71.40271
+},
+{
+"name": "Metcalf Refectory (the Met)",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.827199,
+"lng": -71.406151
+},
+{
+"name": "Metcalf Research Building",
+"alt": "",
+"address": "190 Thayer Street",
+"kind": "university",
+"lat": 41.826806,
+"lng": -71.400826
+},
+{
+"name": "Miller Hall",
+"alt": "",
+"address": "118 Cushing Street",
+"kind": "dormitory",
+"lat": 41.830255,
+"lng": -71.402256
+},
+{
+"name": "Minden Hall",
+"alt": "",
+"address": "121 Waterman Street",
+"kind": "dormitory",
+"lat": 41.827288,
+"lng": -71.399015
+},
+{
+"name": "Morgan Hall",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828685,
+"lng": -71.397928
+},
+{
+"name": "Morrison-Gerard Chamber Music Studios",
+"alt": "",
+"address": "151 Hope Street",
+"kind": "university",
+"lat": 41.824985,
+"lng": -71.397016
+},
+{
+"name": "Morriss Hall",
+"alt": "",
+"address": "206 Meeting Street",
+"kind": "dormitory",
+"lat": 41.82992,
+"lng": -71.401651
+},
+{
+"name": "Mt. Hope Child Care/YMCA",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.837995,
+"lng": -71.400723
+},
+{
+"name": "Narragansett Brewery",
+"alt": "",
+"address": "271 Tockwotten Street",
+"kind": "yes",
+"lat": 41.818585,
+"lng": -71.390449
+},
+{
+"name": "Narragansett Hotel Garage",
+"alt": "",
+"address": "",
+"kind": "parking",
+"lat": 41.822944,
+"lng": -71.410291
+},
+{
+"name": "National Building",
+"alt": "",
+"address": "79 Washington Street",
+"kind": "office",
+"lat": 41.823754,
+"lng": -71.414612
+},
+{
+"name": "National Exchange Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.825,
+"lng": -71.410216
+},
+{
+"name": "Nelson Center for Entrepreneurship",
+"alt": "",
+"address": "1 Euclid Avenue",
+"kind": "yes",
+"lat": 41.828526,
+"lng": -71.400577
+},
+{
+"name": "Nelson Fitness Center",
+"alt": "",
+"address": "225 Hope Street",
+"kind": "yes",
+"lat": 41.830269,
+"lng": -71.397536
+},
+{
+"name": "New Pembroke 1",
+"alt": "",
+"address": "302 Thayer Street",
+"kind": "dormitory",
+"lat": 41.830112,
+"lng": -71.401293
+},
+{
+"name": "New Pembroke 2",
+"alt": "",
+"address": "306 Thayer Street",
+"kind": "dormitory",
+"lat": 41.830464,
+"lng": -71.401495
+},
+{
+"name": "New Pembroke 3",
+"alt": "",
+"address": "308 Thayer Street",
+"kind": "dormitory",
+"lat": 41.83063,
+"lng": -71.401394
+},
+{
+"name": "New Pembroke 4",
+"alt": "",
+"address": "300 Thayer Street",
+"kind": "dormitory",
+"lat": 41.830339,
+"lng": -71.401132
+},
+{
+"name": "Nicholson House",
+"alt": "",
+"address": "71 George Street",
+"kind": "yes",
+"lat": 41.825175,
+"lng": -71.403306
+},
+{
+"name": "Nickerson Hall",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827287,
+"lng": -71.405701
+},
+{
+"name": "Nightingale Apartments",
+"alt": "",
+"address": "100 Mathewson Street",
+"kind": "apartments",
+"lat": 41.823664,
+"lng": -71.414971
+},
+{
+"name": "Nightingale House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.828329,
+"lng": -71.404693
+},
+{
+"name": "Nightingale–Brown House",
+"alt": "John Nicholas Brown Center for Public Humanities and Cultural Heritage",
+"address": "357 Benefit Street",
+"kind": "house",
+"lat": 41.822463,
+"lng": -71.402968
+},
+{
+"name": "North Garage",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.825122,
+"lng": -71.417705
+},
+{
+"name": "North Hall",
+"alt": "",
+"address": "60 Waterman Street",
+"kind": "dormitory",
+"lat": 41.827208,
+"lng": -71.405296
+},
+{
+"name": "North House",
+"alt": "",
+"address": "111 Brown Street",
+"kind": "dormitory",
+"lat": 41.829928,
+"lng": -71.403311
+},
+{
+"name": "Norwood House",
+"alt": "",
+"address": "82 Waterman Street",
+"kind": "yes",
+"lat": 41.827316,
+"lng": -71.402309
+},
+{
+"name": "Nulman Lewis Student Center",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.829193,
+"lng": -71.398617
+},
+{
+"name": "Nursing Arts",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.812608,
+"lng": -71.409894
+},
+{
+"name": "O'Gorman Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822974,
+"lng": -71.412295
+},
+{
+"name": "Old Colony House",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823823,
+"lng": -71.409597
+},
+{
+"name": "Old State House",
+"alt": "Sixth District Court House;Old Colony House",
+"address": "150 Benefit Street",
+"kind": "yes",
+"lat": 41.829145,
+"lng": -71.408732
+},
+{
+"name": "Old Stone Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824556,
+"lng": -71.406691
+},
+{
+"name": "Olney House",
+"alt": "",
+"address": "29 Brown Street",
+"kind": "dormitory",
+"lat": 41.82458,
+"lng": -71.401945
+},
+{
+"name": "Olney Street Baptist Church",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.835922,
+"lng": -71.404976
+},
+{
+"name": "Olney-Margolies Athletic Center",
+"alt": "",
+"address": "229 Hope Street",
+"kind": "yes",
+"lat": 41.830994,
+"lng": -71.397424
+},
+{
+"name": "Omni Providence Hotel",
+"alt": "The Westin Providence",
+"address": "1 West Exchange Street",
+"kind": "yes",
+"lat": 41.825225,
+"lng": -71.41599
+},
+{
+"name": "One Citizens Plaza",
+"alt": "",
+"address": "1 Citizens Plaza",
+"kind": "office",
+"lat": 41.827424,
+"lng": -71.410781
+},
+{
+"name": "One Empire Plaza",
+"alt": "",
+"address": "1 Empire Street",
+"kind": "office",
+"lat": 41.82137,
+"lng": -71.41623
+},
+{
+"name": "One Financial Plaza",
+"alt": "",
+"address": "1 Financial Plaza",
+"kind": "commercial",
+"lat": 41.825335,
+"lng": -71.41008
+},
+{
+"name": "One North",
+"alt": "",
+"address": "1 Wayland Avenue",
+"kind": "apartments",
+"lat": 41.825804,
+"lng": -71.388951
+},
+{
+"name": "One Regency Plaza",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.82151,
+"lng": -71.418845
+},
+{
+"name": "One South",
+"alt": "",
+"address": "1 Wayland Avenue",
+"kind": "apartments",
+"lat": 41.825416,
+"lng": -71.388958
+},
+{
+"name": "One Weybosset Hill",
+"alt": "",
+"address": "",
+"kind": "government",
+"lat": 41.819905,
+"lng": -71.415045
+},
+{
+"name": "Orwig Music Hall",
+"alt": "",
+"address": "1 Young Orchard Avenue",
+"kind": "university",
+"lat": 41.824575,
+"lng": -71.396687
+},
+{
+"name": "Owen Building",
+"alt": "",
+"address": "101 Dyer Street",
+"kind": "commercial",
+"lat": 41.82367,
+"lng": -71.408652
+},
+{
+"name": "PVD Modern Nutrition",
+"alt": "",
+"address": "",
+"kind": "commercial",
+"lat": 41.82038,
+"lng": -71.393971
+},
+{
+"name": "Page Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82317,
+"lng": -71.405653
+},
+{
+"name": "Page-Robinson Hall",
+"alt": "",
+"address": "69 Brown Street",
+"kind": "university",
+"lat": 41.827355,
+"lng": -71.402813
+},
+{
+"name": "Pardon Miller House",
+"alt": "",
+"address": "48 Angell Street",
+"kind": "yes",
+"lat": 41.827892,
+"lng": -71.405895
+},
+{
+"name": "Park Row West",
+"alt": "",
+"address": "1 Park Row West",
+"kind": "apartments",
+"lat": 41.829184,
+"lng": -71.411414
+},
+{
+"name": "Patriots Court",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824449,
+"lng": -71.400997
+},
+{
+"name": "Pembroke Field House",
+"alt": "",
+"address": "171 Cushing Street",
+"kind": "yes",
+"lat": 41.82998,
+"lng": -71.399508
+},
+{
+"name": "Pembroke Hall",
+"alt": "",
+"address": "172 Meeting Street",
+"kind": "university",
+"lat": 41.82922,
+"lng": -71.402822
+},
+{
+"name": "Pendleton House",
+"alt": "",
+"address": "",
+"kind": "museum",
+"lat": 41.826687,
+"lng": -71.407424
+},
+{
+"name": "Penner Field House",
+"alt": "",
+"address": "237 Lloyd Avenue",
+"kind": "yes",
+"lat": 41.830718,
+"lng": -71.396171
+},
+{
+"name": "Peoples Savings Bank Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.8242,
+"lng": -71.411453
+},
+{
+"name": "Perkins Hall",
+"alt": "",
+"address": "154 Power Street",
+"kind": "dormitory",
+"lat": 41.823675,
+"lng": -71.396231
+},
+{
+"name": "Perry and Marty Granoff Center for the Creative Arts",
+"alt": "",
+"address": "154 Angell Street",
+"kind": "university",
+"lat": 41.828292,
+"lng": -71.401397
+},
+{
+"name": "Persimmon",
+"alt": "",
+"address": "99 Hope Street",
+"kind": "yes",
+"lat": 41.822087,
+"lng": -71.396432
+},
+{
+"name": "Peter Green House",
+"alt": "",
+"address": "79 Brown Street",
+"kind": "yes",
+"lat": 41.828068,
+"lng": -71.40289
+},
+{
+"name": "Physicians Office Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.812079,
+"lng": -71.411149
+},
+{
+"name": "Pizza Marvin",
+"alt": "",
+"address": "468 Wickenden Street",
+"kind": "yes",
+"lat": 41.820451,
+"lng": -71.393823
+},
+{
+"name": "Pizzitola Gymnasium",
+"alt": "",
+"address": "233 Hope Street",
+"kind": "yes",
+"lat": 41.831594,
+"lng": -71.397976
+},
+{
+"name": "Planned Parenthood",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817542,
+"lng": -71.417847
+},
+{
+"name": "Point Street Studios",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.815881,
+"lng": -71.408446
+},
+{
+"name": "Potter Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.811329,
+"lng": -71.410744
+},
+{
+"name": "Power Street Parking Structure",
+"alt": "",
+"address": "101 Power Street",
+"kind": "yes",
+"lat": 41.822719,
+"lng": -71.399268
+},
+{
+"name": "Prescott Library",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828566,
+"lng": -71.398396
+},
+{
+"name": "President's House",
+"alt": "",
+"address": "55 Power Street",
+"kind": "house",
+"lat": 41.822679,
+"lng": -71.402639
+},
+{
+"name": "Prince Engineering Lab",
+"alt": "",
+"address": "355 Brook Street",
+"kind": "university",
+"lat": 41.826758,
+"lng": -71.398679
+},
+{
+"name": "Prospect House",
+"alt": "",
+"address": "36 Prospect Street",
+"kind": "yes",
+"lat": 41.826786,
+"lng": -71.404942
+},
+{
+"name": "Providence Children's Museum",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.816451,
+"lng": -71.409379
+},
+{
+"name": "Providence City Hall",
+"alt": "",
+"address": "25 Dorrance Street",
+"kind": "civic",
+"lat": 41.824142,
+"lng": -71.412794
+},
+{
+"name": "Providence Community Library: Fox Point Library",
+"alt": "",
+"address": "90 Ives Street",
+"kind": "yes",
+"lat": 41.820438,
+"lng": -71.392227
+},
+{
+"name": "Providence Fire Department",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.828795,
+"lng": -71.409267
+},
+{
+"name": "Providence Gas Co. Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823131,
+"lng": -71.410524
+},
+{
+"name": "Providence Journal Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823538,
+"lng": -71.412528
+},
+{
+"name": "Providence Performing Arts Center",
+"alt": "Loew's Theater",
+"address": "",
+"kind": "yes",
+"lat": 41.8212,
+"lng": -71.41213
+},
+{
+"name": "Providence Public Library",
+"alt": "",
+"address": "",
+"kind": "library",
+"lat": 41.821792,
+"lng": -71.417277
+},
+{
+"name": "Providence River Animal Hospital",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.816238,
+"lng": -71.40859
+},
+{
+"name": "Providence Square Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823807,
+"lng": -71.412177
+},
+{
+"name": "RISD Admissions Office",
+"alt": "",
+"address": "62 Prospect Street",
+"kind": "yes",
+"lat": 41.828702,
+"lng": -71.405306
+},
+{
+"name": "RISD President's House",
+"alt": "",
+"address": "132 Bowen Street",
+"kind": "house",
+"lat": 41.830839,
+"lng": -71.405269
+},
+{
+"name": "RZL Realty Company Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823048,
+"lng": -71.411439
+},
+{
+"name": "Remington Building",
+"alt": "",
+"address": "91 Friendship Street",
+"kind": "industrial",
+"lat": 41.821037,
+"lng": -71.41058
+},
+{
+"name": "Renaissance Providence Downtown Hotel",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.829977,
+"lng": -71.41657
+},
+{
+"name": "Residence Inn",
+"alt": "",
+"address": "100 Sabin Street",
+"kind": "yes",
+"lat": 41.82365,
+"lng": -71.416214
+},
+{
+"name": "Rhode Island Convention Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.824534,
+"lng": -71.416663
+},
+{
+"name": "Rhode Island Department of Administration",
+"alt": "",
+"address": "1 Capitol Hill",
+"kind": "civic",
+"lat": 41.832902,
+"lng": -71.415694
+},
+{
+"name": "Rhode Island Department of Health",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.83346,
+"lng": -71.414598
+},
+{
+"name": "Rhode Island Department of State Library",
+"alt": "Rhode Island Public Expenditure Library",
+"address": "",
+"kind": "office",
+"lat": 41.817907,
+"lng": -71.407716
+},
+{
+"name": "Rhode Island Department of Transportation",
+"alt": "",
+"address": "3 Capitol Hill",
+"kind": "civic",
+"lat": 41.832179,
+"lng": -71.41471
+},
+{
+"name": "Rhode Island Hall",
+"alt": "",
+"address": "60 George Street",
+"kind": "university",
+"lat": 41.825475,
+"lng": -71.403884
+},
+{
+"name": "Rhode Island State Capitol Building",
+"alt": "Rhode Island State House",
+"address": "82 Smith Street",
+"kind": "public",
+"lat": 41.830916,
+"lng": -71.414978
+},
+{
+"name": "Richmond Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.820637,
+"lng": -71.412936
+},
+{
+"name": "Rise'n'Shine",
+"alt": "",
+"address": "97 Holden Street",
+"kind": "yes",
+"lat": 41.83136,
+"lng": -71.418424
+},
+{
+"name": "River House Apartments",
+"alt": "",
+"address": "1 Point street",
+"kind": "apartments",
+"lat": 41.817798,
+"lng": -71.405124
+},
+{
+"name": "Robert Lippitt House",
+"alt": "",
+"address": "193",
+"kind": "yes",
+"lat": 41.827798,
+"lng": -71.396926
+},
+{
+"name": "Robinson Hall",
+"alt": "",
+"address": "64 Waterman Street",
+"kind": "university",
+"lat": 41.827202,
+"lng": -71.404381
+},
+{
+"name": "Rochambeau House",
+"alt": "",
+"address": "84 Prospect Street",
+"kind": "house",
+"lat": 41.829961,
+"lng": -71.405723
+},
+{
+"name": "Russell Potter House",
+"alt": "",
+"address": "26 John Street",
+"kind": "house",
+"lat": 41.821815,
+"lng": -71.400065
+},
+{
+"name": "S. Chiappinelli Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.818654,
+"lng": -71.419972
+},
+{
+"name": "Saint Elizabeth Place",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.818195,
+"lng": -71.419415
+},
+{
+"name": "Saint Joseph Catholic Church",
+"alt": "",
+"address": "92 Hope Street",
+"kind": "church",
+"lat": 41.821426,
+"lng": -71.396728
+},
+{
+"name": "Saint Patrick Catholic Church",
+"alt": "Saint Patricks Church Hispanic Ministry;Saint Patrick Academy",
+"address": "244 Smith Street",
+"kind": "church",
+"lat": 41.832413,
+"lng": -71.419683
+},
+{
+"name": "Saint Stephens Church",
+"alt": "",
+"address": "114 George Street",
+"kind": "church",
+"lat": 41.825663,
+"lng": -71.401271
+},
+{
+"name": "Saints Peter and Paul Cathedral",
+"alt": "",
+"address": "30 Fenner Street",
+"kind": "cathedral",
+"lat": 41.8193,
+"lng": -71.416545
+},
+{
+"name": "Salomon Center for Teaching",
+"alt": "",
+"address": "79 Waterman Street",
+"kind": "university",
+"lat": 41.826525,
+"lng": -71.402544
+},
+{
+"name": "Samuel & William Foster House",
+"alt": "",
+"address": "93 Power Street",
+"kind": "house",
+"lat": 41.822741,
+"lng": -71.400586
+},
+{
+"name": "Samuel B. Mumford House",
+"alt": "",
+"address": "65",
+"kind": "yes",
+"lat": 41.828818,
+"lng": -71.404685
+},
+{
+"name": "Samuel Slocum House",
+"alt": "",
+"address": "99 Power Street",
+"kind": "house",
+"lat": 41.822769,
+"lng": -71.400238
+},
+{
+"name": "Samuels Sinclair Dental Center",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.812549,
+"lng": -71.407638
+},
+{
+"name": "Sarah Doyle Center for Women and Gender",
+"alt": "",
+"address": "26 Benevolent Street",
+"kind": "university",
+"lat": 41.824774,
+"lng": -71.402923
+},
+{
+"name": "Sayles Hall",
+"alt": "",
+"address": "81 Waterman Street",
+"kind": "university",
+"lat": 41.82621,
+"lng": -71.402532
+},
+{
+"name": "Sciences Library",
+"alt": "",
+"address": "201 Thayer Street",
+"kind": "yes",
+"lat": 41.826956,
+"lng": -71.400172
+},
+{
+"name": "Sears House",
+"alt": "Sears Dorm;Sears House: Wriston Quad",
+"address": "113 George Street",
+"kind": "dormitory",
+"lat": 41.825263,
+"lng": -71.401731
+},
+{
+"name": "Seastreak Ferry Terminal at Providence",
+"alt": "",
+"address": "25 India Street",
+"kind": "commercial",
+"lat": 41.816271,
+"lng": -71.398284
+},
+{
+"name": "Seven Stars",
+"alt": "",
+"address": "103 Point Street",
+"kind": "retail",
+"lat": 41.816638,
+"lng": -71.407707
+},
+{
+"name": "Shakespeare Hall",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.82251,
+"lng": -71.409592
+},
+{
+"name": "Sharpe House",
+"alt": "",
+"address": "79 Brown Street",
+"kind": "university",
+"lat": 41.828271,
+"lng": -71.402971
+},
+{
+"name": "Sharpe Refectory",
+"alt": "The Ratty",
+"address": "144 Thayer Street",
+"kind": "yes",
+"lat": 41.825056,
+"lng": -71.400885
+},
+{
+"name": "Shepard Company Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822768,
+"lng": -71.413496
+},
+{
+"name": "Shirley Miller House",
+"alt": "",
+"address": "59 George Street",
+"kind": "yes",
+"lat": 41.825107,
+"lng": -71.403797
+},
+{
+"name": "Sidney Frank Hall",
+"alt": "",
+"address": "185 Meeting Street",
+"kind": "university",
+"lat": 41.828825,
+"lng": -71.402086
+},
+{
+"name": "Siegal Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822639,
+"lng": -71.414939
+},
+{
+"name": "Silver Star Bakery",
+"alt": "",
+"address": "150 Ives Street",
+"kind": "yes",
+"lat": 41.822424,
+"lng": -71.392309
+},
+{
+"name": "Skyline at Waterplace",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.827465,
+"lng": -71.414339
+},
+{
+"name": "Slade Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823727,
+"lng": -71.413377
+},
+{
+"name": "Slater Hall",
+"alt": "",
+"address": "70 George Street",
+"kind": "university",
+"lat": 41.825772,
+"lng": -71.403858
+},
+{
+"name": "Smith Buonanno Hall",
+"alt": "Smitty-B",
+"address": "95 Cushing Street",
+"kind": "university",
+"lat": 41.829672,
+"lng": -71.402784
+},
+{
+"name": "Sneaker Junkies",
+"alt": "",
+"address": "290 Thayer Street",
+"kind": "yes",
+"lat": 41.829899,
+"lng": -71.40106
+},
+{
+"name": "Snowden Hall",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.82159,
+"lng": -71.411669
+},
+{
+"name": "SoMain 1",
+"alt": "",
+"address": "255;257 South Main Street",
+"kind": "office",
+"lat": 41.822507,
+"lng": -71.405437
+},
+{
+"name": "SoMain 2",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.822274,
+"lng": -71.405217
+},
+{
+"name": "SoMain 3",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82203,
+"lng": -71.405002
+},
+{
+"name": "SoMain Barn Building",
+"alt": "",
+"address": "345-355 South Main Street",
+"kind": "office",
+"lat": 41.821308,
+"lng": -71.404402
+},
+{
+"name": "Soldiers Memorial Gate",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.826367,
+"lng": -71.400558
+},
+{
+"name": "Somo Kitchen & Sushi",
+"alt": "",
+"address": "373 Richmond Street",
+"kind": "yes",
+"lat": 41.816855,
+"lng": -71.407721
+},
+{
+"name": "South Hall",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.827115,
+"lng": -71.406624
+},
+{
+"name": "South Street Landing",
+"alt": "South Street Power Station",
+"address": "350 Eddy Street",
+"kind": "commercial",
+"lat": 41.818399,
+"lng": -71.406067
+},
+{
+"name": "South Street Landing Parking Garage",
+"alt": "",
+"address": "330 Eddy Street",
+"kind": "garage",
+"lat": 41.818834,
+"lng": -71.407454
+},
+{
+"name": "Starbucks",
+"alt": "",
+"address": "468 Angell Street",
+"kind": "yes",
+"lat": 41.83014,
+"lng": -71.389074
+},
+{
+"name": "State Arsenal",
+"alt": "Benefit Street Arsenal",
+"address": "176 Benefit Street",
+"kind": "yes",
+"lat": 41.828486,
+"lng": -71.40834
+},
+{
+"name": "Station Row Apartments",
+"alt": "",
+"address": "10 Park Row West",
+"kind": "apartments",
+"lat": 41.83042,
+"lng": -71.411763
+},
+{
+"name": "Steinert",
+"alt": "",
+"address": "148 Power Street",
+"kind": "yes",
+"lat": 41.82344,
+"lng": -71.396837
+},
+{
+"name": "Stephen Robert '62 Campus Center",
+"alt": "Faunce House",
+"address": "75 Waterman Street",
+"kind": "yes",
+"lat": 41.826838,
+"lng": -71.402957
+},
+{
+"name": "Stephen Robert Hall",
+"alt": "",
+"address": "280 Brook Street",
+"kind": "university",
+"lat": 41.824283,
+"lng": -71.399156
+},
+{
+"name": "Studley Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823344,
+"lng": -71.410142
+},
+{
+"name": "Sturgis Carpenter House",
+"alt": "",
+"address": "102 Williams Street",
+"kind": "house",
+"lat": 41.822498,
+"lng": -71.400768
+},
+{
+"name": "Swearer Center for Public Service",
+"alt": "",
+"address": "25 George Street",
+"kind": "university",
+"lat": 41.825107,
+"lng": -71.405292
+},
+{
+"name": "T.F. Green Hall",
+"alt": "",
+"address": "7 Young Orchard Avenue",
+"kind": "yes",
+"lat": 41.824518,
+"lng": -71.395962
+},
+{
+"name": "Tallulah's Taqueria",
+"alt": "",
+"address": "146 Ives Street",
+"kind": "yes",
+"lat": 41.822165,
+"lng": -71.392255
+},
+{
+"name": "Tanner Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.821753,
+"lng": -71.405096
+},
+{
+"name": "Tel Aviv",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.817459,
+"lng": -71.401882
+},
+{
+"name": "Telephone Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823533,
+"lng": -71.41352
+},
+{
+"name": "Tempo",
+"alt": "",
+"address": "55 George M. Cohan Boulevard",
+"kind": "apartments",
+"lat": 41.818195,
+"lng": -71.399186
+},
+{
+"name": "Textron Tower",
+"alt": "Old Stone Tower",
+"address": "40 Westminster Street",
+"kind": "yes",
+"lat": 41.824967,
+"lng": -71.409211
+},
+{
+"name": "The Ambassador Apartments",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.826193,
+"lng": -71.38978
+},
+{
+"name": "The Arcade",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823962,
+"lng": -71.410434
+},
+{
+"name": "The Arcade Garage",
+"alt": "",
+"address": "66 Weybosset Street",
+"kind": "yes",
+"lat": 41.823483,
+"lng": -71.409653
+},
+{
+"name": "The Center for the Study of Slavery and Justice (CSSJ)",
+"alt": "",
+"address": "94 Waterman Street",
+"kind": "house",
+"lat": 41.82739,
+"lng": -71.401532
+},
+{
+"name": "The Cosmopolitan",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823456,
+"lng": -71.415714
+},
+{
+"name": "The Croft School",
+"alt": "",
+"address": "144 Wayland Avenue",
+"kind": "school",
+"lat": 41.827881,
+"lng": -71.388919
+},
+{
+"name": "The Dean Hotel",
+"alt": "",
+"address": "122 Fountain Street",
+"kind": "yes",
+"lat": 41.823205,
+"lng": -71.4158
+},
+{
+"name": "The Earle Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.823637,
+"lng": -71.413655
+},
+{
+"name": "The Federal Center",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.821147,
+"lng": -71.41458
+},
+{
+"name": "The Fiering House",
+"alt": "",
+"address": "79 Charlesfield Street",
+"kind": "house",
+"lat": 41.82431,
+"lng": -71.397854
+},
+{
+"name": "The First Universalist Church in Providence",
+"alt": "",
+"address": "250 Washington Street",
+"kind": "church",
+"lat": 41.820901,
+"lng": -71.417316
+},
+{
+"name": "The Governor Apartments",
+"alt": "",
+"address": "125 Governor Street",
+"kind": "apartments",
+"lat": 41.824922,
+"lng": -71.393613
+},
+{
+"name": "The Hamilton School at Wheeler",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828441,
+"lng": -71.399185
+},
+{
+"name": "The Hot Club",
+"alt": "",
+"address": "575 South Water Street",
+"kind": "yes",
+"lat": 41.817309,
+"lng": -71.401735
+},
+{
+"name": "The Music Mansion",
+"alt": "Mary K. Hail Music Mansion",
+"address": "",
+"kind": "yes",
+"lat": 41.828994,
+"lng": -71.406573
+},
+{
+"name": "The Old Court Bed & Breakfast",
+"alt": "",
+"address": "144 Benefit Street",
+"kind": "yes",
+"lat": 41.829374,
+"lng": -71.408667
+},
+{
+"name": "The Old Stone Bank Building",
+"alt": "Citizens Bank Building",
+"address": "",
+"kind": "office",
+"lat": 41.821554,
+"lng": -71.415524
+},
+{
+"name": "The PVD Labs",
+"alt": "Rhode Island State Laboratories",
+"address": "150 Richmond Street",
+"kind": "yes",
+"lat": 41.819946,
+"lng": -71.409819
+},
+{
+"name": "The Packet Building",
+"alt": "",
+"address": "155 South Main Street",
+"kind": "office",
+"lat": 41.82347,
+"lng": -71.406751
+},
+{
+"name": "The Pavilion at Grace",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.821697,
+"lng": -71.413649
+},
+{
+"name": "The Peerless Lofts",
+"alt": "Callendar, McAuslan & Troop Building",
+"address": "150 Union Street",
+"kind": "apartments",
+"lat": 41.82324,
+"lng": -71.412952
+},
+{
+"name": "The Premier",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.826536,
+"lng": -71.387946
+},
+{
+"name": "The Promenade Parking Garage",
+"alt": "",
+"address": "5 Edith Street",
+"kind": "industrial",
+"lat": 41.830524,
+"lng": -71.420153
+},
+{
+"name": "The Providence Athenaeum",
+"alt": "",
+"address": "251 Benefit Street",
+"kind": "library",
+"lat": 41.825836,
+"lng": -71.406279
+},
+{
+"name": "The ProvidenceG",
+"alt": "",
+"address": "61 Orange Street",
+"kind": "office",
+"lat": 41.822971,
+"lng": -71.41052
+},
+{
+"name": "The Richmond Garage",
+"alt": "",
+"address": "280 Richmond Street",
+"kind": "parking",
+"lat": 41.8184,
+"lng": -71.408203
+},
+{
+"name": "The Shops at 100",
+"alt": "",
+"address": "",
+"kind": "retail",
+"lat": 41.82478,
+"lng": -71.410892
+},
+{
+"name": "The Westminster Square Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.8241,
+"lng": -71.411723
+},
+{
+"name": "The Wharton P. Whitaker Building",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.828446,
+"lng": -71.39904
+},
+{
+"name": "The Wilkinson",
+"alt": "The Lerner Building",
+"address": "",
+"kind": "yes",
+"lat": 41.823113,
+"lng": -71.412055
+},
+{
+"name": "Theatre Arts Building",
+"alt": "",
+"address": "50 John Street",
+"kind": "university",
+"lat": 41.822041,
+"lng": -71.398834
+},
+{
+"name": "Thomas A. Jenckes House",
+"alt": "",
+"address": "199 Benefit Street",
+"kind": "house",
+"lat": 41.827716,
+"lng": -71.407481
+},
+{
+"name": "Thompson House",
+"alt": "",
+"address": "63 Angell Street",
+"kind": "yes",
+"lat": 41.827504,
+"lng": -71.405239
+},
+{
+"name": "Three Regency Plaza",
+"alt": "",
+"address": "3 Regency Plaza",
+"kind": "apartments",
+"lat": 41.821428,
+"lng": -71.417776
+},
+{
+"name": "Tilden Thurber Co. Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.822152,
+"lng": -71.413363
+},
+{
+"name": "Tiny Bar PVD",
+"alt": "",
+"address": "",
+"kind": "greenhouse",
+"lat": 41.816732,
+"lng": -71.407496
+},
+{
+"name": "Tizzy K's",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.820463,
+"lng": -71.404399
+},
+{
+"name": "Trader Joe's",
+"alt": "",
+"address": "425 South Main Street",
+"kind": "yes",
+"lat": 41.818295,
+"lng": -71.400465
+},
+{
+"name": "Triangolo Gates",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.82228,
+"lng": -71.411584
+},
+{
+"name": "Trinity Presbyterian Church",
+"alt": "",
+"address": "72 Clifford Street",
+"kind": "yes",
+"lat": 41.820442,
+"lng": -71.409645
+},
+{
+"name": "Trinity Repertory Theater",
+"alt": "Emery's Majestic Theater",
+"address": "",
+"kind": "yes",
+"lat": 41.822214,
+"lng": -71.416461
+},
+{
+"name": "Turks Head Building",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.824613,
+"lng": -71.409951
+},
+{
+"name": "Two Regency Plaza",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.820818,
+"lng": -71.418745
+},
+{
+"name": "Union Station",
+"alt": "Providence Station",
+"address": "100 Gaspee Street",
+"kind": "train_station",
+"lat": 41.829219,
+"lng": -71.413331
+},
+{
+"name": "Union Station Plaza Garage",
+"alt": "",
+"address": "",
+"kind": "parking",
+"lat": 41.825749,
+"lng": -71.414292
+},
+{
+"name": "Union Trust Company Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.823621,
+"lng": -71.411339
+},
+{
+"name": "University Club",
+"alt": "Rufus Waterman Estate",
+"address": "",
+"kind": "house",
+"lat": 41.826937,
+"lng": -71.40701
+},
+{
+"name": "University Hall",
+"alt": "",
+"address": "1 Prospect Street",
+"kind": "university",
+"lat": 41.82616,
+"lng": -71.403853
+},
+{
+"name": "Urban Environmental Lab",
+"alt": "",
+"address": "135 Angell Street",
+"kind": "school",
+"lat": 41.827667,
+"lng": -71.402208
+},
+{
+"name": "Vartan Gregorian Quad A",
+"alt": "",
+"address": "103 Thayer Street",
+"kind": "dormitory",
+"lat": 41.8236,
+"lng": -71.399551
+},
+{
+"name": "Vartan Gregorian Quad B",
+"alt": "",
+"address": "101 Thayer Street",
+"kind": "dormitory",
+"lat": 41.823358,
+"lng": -71.399777
+},
+{
+"name": "Vendata Society of Providence",
+"alt": "",
+"address": "227",
+"kind": "temple",
+"lat": 41.828094,
+"lng": -71.398514
+},
+{
+"name": "Verizon",
+"alt": "Telephone Building",
+"address": "",
+"kind": "yes",
+"lat": 41.821243,
+"lng": -71.416673
+},
+{
+"name": "Veterans Memorial Auditorium",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.82992,
+"lng": -71.417144
+},
+{
+"name": "WBRU",
+"alt": "",
+"address": "88 Benevolent Street",
+"kind": "yes",
+"lat": 41.825124,
+"lng": -71.398381
+},
+{
+"name": "Waite-Thresher Building",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.819849,
+"lng": -71.413054
+},
+{
+"name": "Wales Hall",
+"alt": "",
+"address": "",
+"kind": "industrial",
+"lat": 41.820041,
+"lng": -71.412855
+},
+{
+"name": "Walter Hall",
+"alt": "",
+"address": "80 Waterman Street",
+"kind": "yes",
+"lat": 41.827306,
+"lng": -71.402557
+},
+{
+"name": "Warren Alpert Medical School",
+"alt": "",
+"address": "222 Richmond Street",
+"kind": "yes",
+"lat": 41.818977,
+"lng": -71.40855
+},
+{
+"name": "Warwick Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.82098,
+"lng": -71.41272
+},
+{
+"name": "Washington Place",
+"alt": "RISD Administration Building",
+"address": "60 North Main Street",
+"kind": "office",
+"lat": 41.827132,
+"lng": -71.409411
+},
+{
+"name": "Waterman Street Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.826948,
+"lng": -71.407968
+},
+{
+"name": "Waterplace",
+"alt": "",
+"address": "",
+"kind": "apartments",
+"lat": 41.827494,
+"lng": -71.413244
+},
+{
+"name": "Waterplace 2",
+"alt": "",
+"address": "100",
+"kind": "apartments",
+"lat": 41.827442,
+"lng": -71.412771
+},
+{
+"name": "Watson Center for Information Technology",
+"alt": "",
+"address": "115 Waterman Street",
+"kind": "university",
+"lat": 41.826993,
+"lng": -71.399601
+},
+{
+"name": "Watson Institute for International Studies",
+"alt": "",
+"address": "111 Thayer Street",
+"kind": "university",
+"lat": 41.824381,
+"lng": -71.399854
+},
+{
+"name": "Wayland",
+"alt": "",
+"address": "31 Brown Street",
+"kind": "dormitory",
+"lat": 41.824992,
+"lng": -71.402362
+},
+{
+"name": "Wayland Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.828449,
+"lng": -71.409985
+},
+{
+"name": "Wayland Court",
+"alt": "",
+"address": "100 Wayland Avenue",
+"kind": "apartments",
+"lat": 41.82646,
+"lng": -71.388729
+},
+{
+"name": "Wellness Center & Residence Hall",
+"alt": "",
+"address": "450 Brook Street",
+"kind": "yes",
+"lat": 41.829705,
+"lng": -71.399966
+},
+{
+"name": "Wendy's",
+"alt": "",
+"address": "731 Eddy Street",
+"kind": "yes",
+"lat": 41.807829,
+"lng": -71.407597
+},
+{
+"name": "West House",
+"alt": "",
+"address": "91 Brown Street",
+"kind": "yes",
+"lat": 41.829108,
+"lng": -71.403191
+},
+{
+"name": "Westminster Lofts",
+"alt": "Edwin A. Smith Building",
+"address": "",
+"kind": "apartments",
+"lat": 41.823511,
+"lng": -71.41322
+},
+{
+"name": "Wexford Innovation Complex",
+"alt": "",
+"address": "225 Dyer Street",
+"kind": "commercial",
+"lat": 41.820217,
+"lng": -71.408657
+},
+{
+"name": "What Cheer Garage & Studios",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.828786,
+"lng": -71.408621
+},
+{
+"name": "Wheeler Hall",
+"alt": "",
+"address": "",
+"kind": "school",
+"lat": 41.82874,
+"lng": -71.398617
+},
+{
+"name": "Wilbour Hall",
+"alt": "",
+"address": "2 Prospect Street",
+"kind": "apartments",
+"lat": 41.825418,
+"lng": -71.404704
+},
+{
+"name": "Wilcox Building",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.824166,
+"lng": -71.40945
+},
+{
+"name": "Willard Ave Parking",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.809539,
+"lng": -71.409307
+},
+{
+"name": "William and Ami Danoff Hall",
+"alt": "",
+"address": "259 Brook Street",
+"kind": "dormitory",
+"lat": 41.823718,
+"lng": -71.398544
+},
+{
+"name": "Winslow Building",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.821562,
+"lng": -71.413089
+},
+{
+"name": "Woolley Hall",
+"alt": "",
+"address": "202 Meeting Street",
+"kind": "dormitory",
+"lat": 41.829589,
+"lng": -71.401575
+},
+{
+"name": "Wyndham Garden Downtown Providence Hotel",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.818554,
+"lng": -71.391098
+},
+{
+"name": "Xaco Taco",
+"alt": "",
+"address": "370 Richmond Street",
+"kind": "yes",
+"lat": 41.817132,
+"lng": -71.407419
+},
+{
+"name": "Xavier Academic Complex",
+"alt": "",
+"address": "",
+"kind": "office",
+"lat": 41.818574,
+"lng": -71.414374
+},
+{
+"name": "Xavier Hall",
+"alt": "",
+"address": "",
+"kind": "dormitory",
+"lat": 41.818892,
+"lng": -71.414868
+},
+{
+"name": "Xclusive Cuts",
+"alt": "",
+"address": "149 Gano Street",
+"kind": "commercial",
+"lat": 41.823776,
+"lng": -71.389882
+},
+{
+"name": "Yena Center",
+"alt": "",
+"address": "",
+"kind": "university",
+"lat": 41.82257,
+"lng": -71.410769
+},
+{
+"name": "Young Orchard 10",
+"alt": "",
+"address": "10 Young Orchard Avenue",
+"kind": "dormitory",
+"lat": 41.824128,
+"lng": -71.395768
+},
+{
+"name": "Young Orchard 2",
+"alt": "",
+"address": "2 Young Orchard Avenue",
+"kind": "dormitory",
+"lat": 41.824064,
+"lng": -71.396857
+},
+{
+"name": "Young Orchard 4",
+"alt": "",
+"address": "4 Young Orchard Avenue",
+"kind": "dormitory",
+"lat": 41.824113,
+"lng": -71.396367
+},
+{
+"name": "Zecchino Pavilion",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.81185,
+"lng": -71.409221
+},
+{
+"name": "west elm",
+"alt": "",
+"address": "",
+"kind": "yes",
+"lat": 41.829143,
+"lng": -71.388032
+}
+]
