@@ -42,17 +42,17 @@ input::placeholder { color: var(--muted); }
 .bus { transition: transform 1.2s ease; }
 
 /* Top */
-.top { position: absolute; left: 0; right: 0; top: 0; padding: max(16px, env(safe-area-inset-top)) 16px 0; display: flex; flex-direction: column; gap: 12px; }
-.brand-row { display: flex; align-items: center; justify-content: space-between; height: 40px; }
-.brand { display: flex; align-items: center; gap: 10px; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; }
-.mark { width: 30px; height: 30px; border-radius: 9px; background: var(--accent); display: flex; align-items: center; justify-content: center; }
-.chip { display: flex; align-items: center; gap: 7px; font-size: 13px; padding: 6px 10px; border-radius: 999px; background: rgba(251, 250, 247, 0.88); color: var(--ink-2); }
+.top { position: absolute; left: 0; right: 0; top: 0; padding: max(10px, env(safe-area-inset-top)) 14px 0; display: flex; flex-direction: column; gap: 8px; }
+.brand-row { display: flex; align-items: center; justify-content: space-between; height: 30px; }
+.brand { display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; letter-spacing: -0.01em; white-space: nowrap; }
+.mark { width: 24px; height: 24px; border-radius: 7px; background: var(--accent); display: flex; align-items: center; justify-content: center; }
+.chip { display: flex; align-items: center; gap: 6px; font-size: 12px; padding: 4px 9px; border-radius: 999px; background: rgba(251, 250, 247, 0.88); color: var(--ink-2); }
 .pulse { width: 7px; height: 7px; border-radius: 50%; background: #2F7A3A; box-shadow: 0 0 0 3px rgba(47, 122, 58, 0.18); }
 .pulse.off { background: #8C857A; box-shadow: none; }
 
 .card { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); }
 .od { display: flex; flex-direction: column; }
-.od .row { display: flex; align-items: center; gap: 12px; height: 54px; padding: 0 16px; width: 100%; }
+.od .row { display: flex; align-items: center; gap: 12px; height: 48px; padding: 0 16px; width: 100%; }
 .od .row:first-child { border-radius: 18px 18px 0 0; }
 .od .row:last-child { border-radius: 0 0 18px 18px; }
 .od .divider { height: 1px; background: #E6E1D8; margin-left: 48px; }
@@ -148,3 +148,4 @@ input::placeholder { color: var(--muted); }
 .about li { margin: 6px 0; }
 .about .byline { margin-top: 24px; color: var(--muted); font-size: 14px; }
 .about a { color: var(--accent); }
+.mark svg { width: 15px; height: 15px; }

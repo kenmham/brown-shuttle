@@ -395,7 +395,7 @@ function homeView(from) {
       <div class="legend-row">${REACH_BANDS.map(([m, o]) => `<span class="legend-item"><span class="swatch" style="background:rgba(168,67,42,${o})"></span>${m} min</span>`).join('')}</div>
     </div>` : ''}
   </div>
-  <div class="sheet" id="sheet" style="max-height:44%">
+  <div class="sheet" id="sheet" style="max-height:30%">
     <div class="handle-zone"><div class="handle"></div></div>
     <div class="sheet-head"><div class="sheet-title">Running now</div><div class="sub">${live.length ? 'Nearest stop to you' : ''}</div></div>
     ${rows}${empty}${offline}
