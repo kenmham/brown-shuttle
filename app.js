@@ -21,7 +21,9 @@ const RIDE_M_PER_MIN = 300, DWELL_MIN = 0.35;       // fallback ride model when 
 const WALK_M_PER_MIN = 80, WALK_DETOUR = 1.25, MAX_WALK_MIN = 15;
 const ZOOM_MIN = 0.6, ZOOM_MAX = 8;                 // map zoom, relative to the fitted view
 const SHEET_PEEK_PX = 96, SHEET_TOP_GAP_PX = 56;    // sheet snap points: collapsed height, gap left above it when open
-const CATCH_SLACK_MIN = 0.5;                        // a bus this close to your arrival is still catchable
+const CATCH_SLACK_MIN = 0.5;
+const ALT_EXTRA_MIN = 5;                            // when walking wins, list the bus only if it costs at most this much more
+const MIN_RIDE_SHARE = 0.6;                         // shortest believable ride, as a share of the modelled one                        // a bus this close to your arrival is still catchable
 const BASEMAP = { src: 'basemap.svg', frame: [-160, -40, 720, 800] };  // map px covered by basemap.svg
 // Brown dining locations, placed on their OpenStreetMap buildings.
 const DINING = [
@@ -156,12 +158,10 @@ function rides(O) {
         const b = stopPt(r.stops[j].stop);
         if (b.place === a.place) continue;
         const sameBusAtB = arrivals(b.id, r.id).find((e) => e.busId === bus.busId && e.min > bus.min);
-        let ride;
-        if (sameBusAtB) ride = sameBusAtB.min - bus.min;
-        else {
-          const rideM = ((r.stops[j].at_m - r.stops[i].at_m) % r.length_m + r.length_m) % r.length_m;
-          ride = rideM / RIDE_M_PER_MIN + DWELL_MIN * (k - 1) + 0.3;
-        }
+        const rideM = ((r.stops[j].at_m - r.stops[i].at_m) % r.length_m + r.length_m) % r.length_m;
+        const model = rideM / RIDE_M_PER_MIN + DWELL_MIN * (k - 1) + 0.3;
+        // Passio's pair of ETAs can collapse to near zero; never trust a ride much shorter than the model
+        const ride = sameBusAtB ? Math.max(sameBusAtB.min - bus.min, model * MIN_RIDE_SHARE) : model;
         const board = Math.max(bus.min, w1);
         out.push({ r, a, b, w1, ride, bus, board, arrive: board + ride, wait: board - w1, k,
           following: atA[catchIdx + 1], toward: stopPt(r.stops[(i + 1) % n].stop) });
@@ -172,13 +172,15 @@ function rides(O) {
 }
 
 function plan(O, D) {
+  const walk = walkMin(O, D);
   let best = null;
   for (const x of rides(O)) {
     const w2 = walkMin(x.b, D);
+    if (x.w1 + w2 >= walk) continue;                         // a bus that saves no walking is no option
     const total = x.arrive + w2;
     if (!best || total < best.total) best = Object.assign({}, x, { w2, total });
   }
-  return { walk: walkMin(O, D), best };
+  return { walk, best };
 }
 
 // ---------- reach ----------
@@ -518,8 +520,8 @@ function fromView(from) {
 }
 
 function tripView(from, dest, p) {
-  const b = p.best;
-  const useShuttle = b && b.total < p.walk - 1;
+  const useShuttle = p.best && p.best.total < p.walk - 1;
+  const b = useShuttle || (p.best && p.best.total <= p.walk + Math.max(ALT_EXTRA_MIN, p.walk / 2)) ? p.best : null;
   const head = `<div class="card trip-head">
     <button class="icon-btn" data-go="search" aria-label="Back to search">${ICON.back}</button>
     <div class="grow"><div class="label-sm" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">From ${esc(from.name)}</div><div class="value" style="font-weight:600">${esc(dest.name)}</div></div>
@@ -584,7 +586,7 @@ function tripView(from, dest, p) {
   // walking wins (or no bus): walking first, the best shuttle option still listed below it
   const reason = b ? 'Walking gets you there sooner than the next shuttle would.'
     : !state.live ? (state.liveError ? "Couldn't reach the tracker, so this is the walk." : 'Checking the shuttles…')
-    : liveRoutes().length ? 'No bus on the road right now gets you closer than walking.'
+    : liveRoutes().length ? 'Walking is quickest. No bus right now would save you time.'
     : 'No shuttles are on the road right now. OnCall picks up from 5 PM.';
   return head + `<div class="sheet" style="height:min(${b ? '400px, 50%' : '300px, 40%'})">
     <div class="handle-zone"><div class="handle"></div></div>
