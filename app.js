@@ -399,6 +399,7 @@ function homeView(from) {
     <div class="handle-zone"><div class="handle"></div></div>
     <div class="sheet-head"><div class="sheet-title">Running now</div><div class="sub">${live.length ? 'Nearest stop to you' : ''}</div></div>
     ${rows}${empty}${offline}
+    <button class="about-link" data-go="about">About this prototype</button>
   </div>`;
 }
 
@@ -429,6 +430,29 @@ function resultsHtml(from) {
       <div class="grow"><div class="value">${esc(p.name)}</div><div class="sub">${esc(p.lines)}</div></div>
       <div class="num sub">${mins(d)} min walk</div>
     </button>`).join('');
+}
+
+function aboutView() {
+  return `<div class="full">
+    <div class="full-head">
+      <div class="head-row">
+        <button class="icon-btn" data-go="home" aria-label="Back">${ICON.back}</button>
+        <div class="about-title">About</div>
+      </div>
+    </div>
+    <div class="list about">
+      <p>A prototype redesign of the Brown shuttle tracker. Instead of picking a route and a stop, you say where you're going and it works out the rest.</p>
+      <div class="list-title">What it does</div>
+      <ul>
+        <li>Live buses and arrival times from Passio GO</li>
+        <li>Search any campus building, dining hall or stop</li>
+        <li>Walk or ride: it picks whichever is faster, and where to board and get off</li>
+        <li>A leave-by time, and Go mode that tells you to relax, walk or run for your bus</li>
+        <li>A reach map of how far you get in 5 to 20 minutes</li>
+      </ul>
+      <p class="byline">Made by Kenzi M'hamdi<br><a href="https://github.com/kenmham" target="_blank" rel="noopener noreferrer">github.com/kenmham</a></p>
+    </div>
+  </div>`;
 }
 
 function searchView(from) {
@@ -602,7 +626,7 @@ function render() {
       fit: (W, H) => fit(leg || (b ? [from, dest, b.a, b.b] : [from, dest]), [28, 110, W - 28, H - sheetH - 24]),
     });
   } else {
-    panel.innerHTML = state.screen === 'search' ? searchView(from) : state.screen === 'from' ? fromView(from) : homeView(from);
+    panel.innerHTML = state.screen === 'search' ? searchView(from) : state.screen === 'from' ? fromView(from) : state.screen === 'about' ? aboutView() : homeView(from);
     applySheet();
     renderMap(homeMapView(from));
     if (state.screen === 'search') document.getElementById('dest').focus();

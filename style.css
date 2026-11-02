@@ -137,3 +137,14 @@ input::placeholder { color: var(--muted); }
 .status.letgo { background: var(--ground); } .status.letgo .status-head { color: var(--ink-2); }
 .status.ride, .status.done { background: #E3EAF0; } .status.ride .status-head, .status.done .status-head { color: #1F4560; }
 
+
+/* About */
+.about-link { display: block; margin: 14px auto 0; padding: 8px 12px; font-size: 13px; color: var(--muted); }
+.about-title { font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
+.about { padding: 8px 20px 32px; font-size: 15px; line-height: 1.55; }
+.about p { margin: 12px 0; }
+.about .list-title { padding: 14px 0 6px; }
+.about ul { margin: 0; padding-left: 18px; }
+.about li { margin: 6px 0; }
+.about .byline { margin-top: 24px; color: var(--muted); font-size: 14px; }
+.about a { color: var(--accent); }
