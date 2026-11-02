@@ -1,4 +1,4 @@
-// Brown Shuttle. © 2026 Kenzi M'hamdi
+// © 2026 Kenzi M'hamdi, https://github.com/kenmham
 // Brown Shuttle: trip planner on Brown's Passio GO feed (system 1067).
 // Static network and named buildings: data/. Map: basemap.svg (OpenStreetMap).
 // Live: vehicle positions and per-stop ETAs, polled straight from Passio (CORS is open).
