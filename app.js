@@ -5,6 +5,7 @@
 
 const NETWORK_URL = 'data/network.json';
 const BUILDINGS_URL = 'data/buildings.json';
+const WALK_URL = 'data/walk.json';                  // OpenStreetMap paths, sidewalks and streets
 const MAX_RESULTS = 40;
 const REACH_STEP = 4;                                // reach grid cell, in map px (about 20 m)
 const REACH_BANDS = [[5, 0.46], [10, 0.32], [15, 0.2], [20, 0.1]];  // minutes, fill opacity
@@ -18,11 +19,11 @@ const MAX_ETA_MIN = 90;                             // Passio ETAs past this are
 
 const LNG_PX = 17003.9, LAT_PX = 22782.1;          // same projection as the network builder
 const RIDE_M_PER_MIN = 300, DWELL_MIN = 0.35;       // fallback ride model when Passio has no ETA pair
-const WALK_M_PER_MIN = 80, WALK_DETOUR = 1.25, MAX_WALK_MIN = 15;
+const WALK_M_PER_MIN = 80, WALK_DETOUR = 1.25, MAX_WALK_MIN = 15;  // detour only used off the path network
+const SNAP_CELL_DEG = 0.0006;                       // nearest-path lookup grid, about 60 m
 const ZOOM_MIN = 0.6, ZOOM_MAX = 8;                 // map zoom, relative to the fitted view
 const SHEET_PEEK_PX = 96, SHEET_TOP_GAP_PX = 56;    // sheet snap points: collapsed height, gap left above it when open
 const CATCH_SLACK_MIN = 0.5;
-const ALT_EXTRA_MIN = 5;                            // when walking wins, list the bus only if it costs at most this much more
 const MIN_RIDE_SHARE = 0.6;                         // shortest believable ride, as a share of the modelled one                        // a bus this close to your arrival is still catchable
 const BASEMAP = { src: 'basemap.svg', frame: [-160, -40, 720, 800] };  // map px covered by basemap.svg
 // Brown dining locations, placed on their OpenStreetMap buildings.
@@ -46,7 +47,96 @@ const state = { screen: 'home', fromId: 'demo', destId: null, query: '', fromQue
 // ---------- geometry ----------
 function proj(lat, lng) { return { x: 205 + (lng + 71.403) * LNG_PX, y: 300 - (lat - 41.8245) * LAT_PX }; }
 function metres(a, b) { return Math.hypot((a.lat - b.lat) * 111132, (a.lng - b.lng) * 82946); }
-function walkMin(a, b) { return metres(a, b) * WALK_DETOUR / WALK_M_PER_MIN; }
+
+// ---------- walking network ----------
+// Walks follow real paths: snap each end to the nearest path point, then shortest path between them.
+let WALK = null;
+function loadWalk(w) {
+  const n = w.nodes.length / 2, lat = new Float64Array(n), lng = new Float64Array(n);
+  for (let i = 0; i < n; i++) { lat[i] = w.center[0] + w.nodes[2 * i] / w.coord_scale; lng[i] = w.center[1] + w.nodes[2 * i + 1] / w.coord_scale; }
+  const deg = new Uint32Array(n + 1);
+  for (let e = 0; e < w.edges.length; e += 3) { deg[w.edges[e] + 1]++; deg[w.edges[e + 1] + 1]++; }
+  for (let i = 0; i < n; i++) deg[i + 1] += deg[i];
+  const fill = deg.slice(0, n), to = new Uint32Array(deg[n]), len = new Float32Array(deg[n]);
+  for (let e = 0; e < w.edges.length; e += 3) {
+    const a = w.edges[e], b = w.edges[e + 1], m = w.edges[e + 2];
+    to[fill[a]] = b; len[fill[a]++] = m;
+    to[fill[b]] = a; len[fill[b]++] = m;
+  }
+  const grid = new Map();
+  for (let i = 0; i < n; i++) {
+    const k = Math.floor(lat[i] / SNAP_CELL_DEG) + ',' + Math.floor(lng[i] / SNAP_CELL_DEG);
+    if (!grid.has(k)) grid.set(k, []);
+    grid.get(k).push(i);
+  }
+  WALK = { n, lat, lng, start: deg, to, len, grid, trees: new Map() };
+}
+function nearestNode(p) {
+  if (p._snap && p._snap.lat === p.lat && p._snap.lng === p.lng) return p._snap;
+  const r = Math.floor(p.lat / SNAP_CELL_DEG), c = Math.floor(p.lng / SNAP_CELL_DEG);
+  let best = -1, bestM = Infinity;
+  for (let ring = 1; ring <= 4 && best < 0; ring++) {
+    for (let dr = -ring; dr <= ring; dr++) for (let dc = -ring; dc <= ring; dc++) {
+      for (const i of WALK.grid.get((r + dr) + ',' + (c + dc)) || []) {
+        const m = metres(p, { lat: WALK.lat[i], lng: WALK.lng[i] });
+        if (m < bestM) { bestM = m; best = i; }
+      }
+    }
+  }
+  const snap = { lat: p.lat, lng: p.lng, i: best, m: bestM };
+  if (Object.isExtensible(p)) p._snap = snap;
+  return snap;
+}
+// metres along paths from node `src` to every node
+function pathTree(src) {
+  if (!WALK.trees.has(src)) WALK.trees.set(src, dijkstra([[0, src]]));
+  return WALK.trees.get(src);
+}
+// shortest path from any of the seeds [startCost, node] to every node (binary heap)
+function dijkstra(seeds) {
+  const { n, start, to, len } = WALK, dist = new Float64Array(n).fill(Infinity);  // 64-bit: rounded costs would re-queue nodes endlessly
+  const heap = [];
+  for (const [d, i] of seeds) if (d < dist[i]) { dist[i] = d; heap.push([d, i]); }
+  heap.sort((a, b) => a[0] - b[0]);
+  while (heap.length) {
+    const [d, u] = heap[0], last = heap.pop();
+    if (heap.length) {
+      heap[0] = last;
+      for (let i = 0; ;) {
+        const l = 2 * i + 1, r = l + 1;
+        let m = i;
+        if (l < heap.length && heap[l][0] < heap[m][0]) m = l;
+        if (r < heap.length && heap[r][0] < heap[m][0]) m = r;
+        if (m === i) break;
+        [heap[i], heap[m]] = [heap[m], heap[i]]; i = m;
+      }
+    }
+    if (d > dist[u]) continue;
+    for (let e = start[u]; e < start[u + 1]; e++) {
+      const v = to[e], nd = d + len[e];
+      if (nd < dist[v]) {
+        dist[v] = nd;
+        heap.push([nd, v]);
+        for (let i = heap.length - 1; i > 0;) {
+          const pa = (i - 1) >> 1;
+          if (heap[pa][0] <= heap[i][0]) break;
+          [heap[i], heap[pa]] = [heap[pa], heap[i]]; i = pa;
+        }
+      }
+    }
+  }
+  return dist;
+}
+function walkMin(a, b) {
+  const straight = metres(a, b);
+  if (!WALK) return straight * WALK_DETOUR / WALK_M_PER_MIN;
+  const sa = nearestNode(a), sb = nearestNode(b);
+  if (sa.i < 0 || sb.i < 0) return straight * WALK_DETOUR / WALK_M_PER_MIN;
+  // reuse whichever end already has a tree; paths are two-way
+  const along = WALK.trees.has(sb.i) ? pathTree(sb.i)[sa.i] : pathTree(sa.i)[sb.i];
+  if (!isFinite(along)) return straight * WALK_DETOUR / WALK_M_PER_MIN;
+  return Math.max(straight, sa.m + along + sb.m) / WALK_M_PER_MIN;
+}
 function cleanName(n) { return n.replace(/\s*\(to [^)]*\)/, '').replace(/\s+(CW|CCW)$/, '').trim(); }
 function mins(v) { return Math.max(1, Math.round(v)); }
 function esc(s) { return String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
@@ -176,7 +266,6 @@ function plan(O, D) {
   let best = null;
   for (const x of rides(O)) {
     const w2 = walkMin(x.b, D);
-    if (x.w1 + w2 >= walk) continue;                         // a bus that saves no walking is no option
     const total = x.arrive + w2;
     if (!best || total < best.total) best = Object.assign({}, x, { w2, total });
   }
@@ -186,6 +275,39 @@ function plan(O, D) {
 // ---------- reach ----------
 // Minutes to every point on the map: walking, or the best live ride then walking.
 let reachCache = { key: '', url: '' };
+// nearest path point to each reach cell, spread outward from the cells that hold one (computed once)
+let REACH_CELLS = null;
+function reachCells(cw, ch) {
+  if (REACH_CELLS && REACH_CELLS.cw === cw) return REACH_CELLS;
+  const [fx, fy] = BASEMAP.frame, size = cw * ch;
+  const node = new Int32Array(size).fill(-1), m = new Float32Array(size).fill(Infinity);
+  const centre = (c) => ({ lat: 41.8245 - (fy + (Math.floor(c / cw) + 0.5) * REACH_STEP - 300) / LAT_PX,
+    lng: (fx + (c % cw + 0.5) * REACH_STEP - 205) / LNG_PX - 71.403 });
+  const near = (c, i) => metres(centre(c), { lat: WALK.lat[i], lng: WALK.lng[i] });
+  let queue = [];
+  for (let i = 0; i < WALK.n; i++) {
+    const p = proj(WALK.lat[i], WALK.lng[i]);
+    const col = Math.floor((p.x - fx) / REACH_STEP), row = Math.floor((p.y - fy) / REACH_STEP);
+    if (col < 0 || row < 0 || col >= cw || row >= ch) continue;
+    const c = row * cw + col, d = near(c, i);
+    if (d < m[c]) { if (node[c] < 0) queue.push(c); node[c] = i; m[c] = d; }
+  }
+  const queued = new Int32Array(size).fill(-1);  // wave a cell was last queued in, so each wave holds it once
+  for (let wave = 0; queue.length; wave++) {
+    const next = [];
+    for (const c of queue) {
+      const row = Math.floor(c / cw), col = c % cw;
+      for (let dr = -1; dr <= 1; dr++) for (let dc = -1; dc <= 1; dc++) {
+        const r2 = row + dr, c2 = col + dc;
+        if (r2 < 0 || c2 < 0 || r2 >= ch || c2 >= cw) continue;
+        const k = r2 * cw + c2, d = near(k, node[c]);
+        if (d < m[k] - 1) { if (queued[k] !== wave) { queued[k] = wave; next.push(k); } node[k] = node[c]; m[k] = d; }
+      }
+    }
+    queue = next;
+  }
+  return (REACH_CELLS = { cw, node, m });
+}
 function reachImage(O) {
   const key = [O.lat, O.lng, state.live ? state.live.at : 0, Math.floor(Date.now() / 30000)].join('|');
   if (reachCache.key === key) return reachCache.url;
@@ -196,6 +318,13 @@ function reachImage(O) {
   const exits = Object.values(byStop);
   const [fx, fy, fw, fh] = BASEMAP.frame;
   const cw = Math.round(fw / REACH_STEP), ch = Math.round(fh / REACH_STEP);
+  // one search over the paths: from you on foot, and from every stop at the time a bus gets you there
+  const cells = WALK && reachCells(cw, ch);
+  let field = null;
+  if (cells) {
+    const seeds = [O, ...exits.map((e) => e.p)].map((p, k) => { const s = nearestNode(p); return [s.m + (k ? exits[k - 1].t * WALK_M_PER_MIN : 0), s.i]; });
+    field = dijkstra(seeds.filter(([, i]) => i >= 0));
+  }
   const canvas = document.createElement('canvas');
   canvas.width = cw; canvas.height = ch;
   const ctx = canvas.getContext('2d');
@@ -203,9 +332,15 @@ function reachImage(O) {
   for (let row = 0; row < ch; row++) {
     const lat = 41.8245 - (fy + (row + 0.5) * REACH_STEP - 300) / LAT_PX;
     for (let col = 0; col < cw; col++) {
-      const pt = { lat, lng: (fx + (col + 0.5) * REACH_STEP - 205) / LNG_PX - 71.403 };
-      let t = walkMin(O, pt);
-      for (const e of exits) if (e.t < t) t = Math.min(t, e.t + walkMin(e.p, pt));
+      let t;
+      if (field) {
+        const c = row * cw + col;
+        t = cells.node[c] < 0 ? Infinity : (field[cells.node[c]] + cells.m[c]) / WALK_M_PER_MIN;
+      } else {
+        const pt = { lat, lng: (fx + (col + 0.5) * REACH_STEP - 205) / LNG_PX - 71.403 };
+        t = walkMin(O, pt);
+        for (const e of exits) if (e.t < t) t = Math.min(t, e.t + walkMin(e.p, pt));
+      }
       const band = REACH_BANDS.find(([m]) => t <= m);
       if (!band) continue;
       const o = (row * cw + col) * 4;
@@ -254,7 +389,8 @@ function goStatus(from) {
 function fit(pts, R) {
   const xs = pts.map((p) => p.x), ys = pts.map((p) => p.y);
   const x1 = Math.min(...xs), x2 = Math.max(...xs), y1 = Math.min(...ys), y2 = Math.max(...ys);
-  if (R[3] - R[1] < 120) R = [R[0], R[1], R[2], R[1] + 120];  // sheet pulled up over the map: frame behind it
+  // sheet pulled up over the map, or a hidden map: keep a frame to fit into
+  R = [R[0], R[1], Math.max(R[2], R[0] + 120), Math.max(R[3], R[1] + 120)];
   const bw = Math.max(x2 - x1, 70), bh = Math.max(y2 - y1, 70);
   const s = Math.min((R[2] - R[0]) / bw, (R[3] - R[1]) / bh, 2.6);
   const vbx = (x1 + x2) / 2 - (R[0] + R[2]) / 2 / s;
@@ -520,8 +656,8 @@ function fromView(from) {
 }
 
 function tripView(from, dest, p) {
-  const useShuttle = p.best && p.best.total < p.walk - 1;
-  const b = useShuttle || (p.best && p.best.total <= p.walk + Math.max(ALT_EXTRA_MIN, p.walk / 2)) ? p.best : null;
+  const b = p.best;
+  const useShuttle = b && b.total < p.walk - 1;
   const head = `<div class="card trip-head">
     <button class="icon-btn" data-go="search" aria-label="Back to search">${ICON.back}</button>
     <div class="grow"><div class="label-sm" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">From ${esc(from.name)}</div><div class="value" style="font-weight:600">${esc(dest.name)}</div></div>
@@ -834,8 +970,9 @@ function startGeo() {
 }
 
 (async function start() {
-  const [net, buildings] = await Promise.all([fetch(NETWORK_URL), fetch(BUILDINGS_URL)].map((r) => r.then((x) => x.json())));
+  const [net, buildings, walk] = await Promise.all([fetch(NETWORK_URL), fetch(BUILDINGS_URL), fetch(WALK_URL)].map((r) => r.then((x) => x.json())));
   NET = net;
+  loadWalk(walk);
   buildPlaces(buildings);
   // permission already granted: start from where you are, without asking
   if (navigator.permissions) {
